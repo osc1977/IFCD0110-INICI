@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercici GRID</title>
+        <meta charset="utf-8">
+        <style>
+            /* clases d'estils */
+            .contenidor{
+                display: grid;
+                grid-template-areas:
+                "header header header header header header header header header"
+                "main main main main main main main main aside"
+                "main main main main main main main main aside"
+                "main main main main main main main main aside"
+                "main main main main main main main main aside"
+                "main main main main main main main main aside"
+                "main main main main main main main main aside"
+                "footer footer footer footer footer footer footer footer footer ";
+                
+                /* aixo determina quines proporcions ocupan les files i columnes  */
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            }
+            .imatge{
+                width: 150px;
+                float: left;
+                padding-right: 18px;
+            }
+            
+            /* clases d'etiquetes */
+            header, footer{
+                text-align: center;
+                background-color: darkblue;
+                color: beige;
+            }
+
+            /* en aquestes etiquetes asociem la files i columnes */
+            header{
+                grid-area: header;
+            }
+            main{
+                grid-area: main;
+                background-color: aqua;
+            }
+            aside{
+                grid-area: aside;
+                background-color: blueviolet;
+                text-align: center;
+            }
+            footer{
+                grid-area: footer;
+                background-color: greenyellow;
+                color: black;
+            }
+            li{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body class="contenidor">
+        <header>
+            <h1>Exemple de Capçalera grid</h1>
+        </header>
+
+
+        <!-- Contingut -->
+        <main>
+            <article>
+                <h2>Força</h2>
+                <seccio>
+                    <img src="./img/ball.jpg" class="imatge" alt="pilota">
+                    Fortitud corporal e ardiment se vol exercir ab saviesa:. Dix-los semblants paraules: Mos fills e fidelíssims servidors a la. De gloriosa recordació sia estat. Vegades los pocs han obtesa victòria dels molts. La Santa Escriptura les històries e. Gestes e històries antigues que. D'Ovidi de Dant e d'altres poetes; los. Sa viril joventut havia experimentada molt. Discreció; e per ço ab lo divinal. Dona Judic ab ànimo viril gosà matar Holofernes. Gestes e innumerables històries són estades compilades. Per longitud de temps envellits mas encara. De Varoic proposà d'anar al Sant Sepuclre e. Virtuós Comte en edat avançada de cinquanta-cinc anys mogut. D'Octovià de Marc Antoni e de molts altres Trobam escrites. Los cavallers animosos volgueren morir en les batalles ans. Tenia un fill de molta poca edat E havia fet.
+                </seccio>
+            </article>
+            
+            <article style="text-align: right;">
+                <h2>Infancia</h2>
+                Infants de poca edat en l'exercici militar. Guillem de Varoic Aquest era. Aquell valentíssim cavaller Tirant lo Blanc del. Usar volen de discreció; e per ço ab lo divinal. La molta amor que li portava; la feminil condició promptament. Fèrtil rica e delitosa illa d'Anglaterra. Plau que jo m'he a partir de. Fet ab tal artifici que es departia. Humà compendre e retenir aquelles Antigament l'orde militar. En la joventut sua havia fetes seguint. Edat avançada de cinquanta-cinc anys mogut. Rei i de deu mília combatents ensús e. Antigues dels homens forts e virtuosos com sien espills. Torneigs nodrint los infants de poca.
+            </article>
+        </main>
+
+
+        <aside style="color: blanchedalmond;">
+            <h2>Menu</h2>
+            <ul>
+                <!-- <li><a href="">Casa</li> -->
+                <li>Estris</li>
+                <li>Mascotes</li>
+            </ul>
+        </aside>
+        
+        
+        <footer>
+            <h6>
+                Desenvolupat per Osc1977
+            </h6>
+        </footer>
+    </body>
+
+</html>
