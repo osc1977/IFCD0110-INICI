@@ -9,10 +9,18 @@
                 font-size: 25px;
                 text-decoration: underline;
             }
+            .titol{
+                text-align: center;
+            }
             .caixa{
                 border: 2px solid black;
                 margin: 2px;
                 width: 150px;
+            }
+            .tarjeta{
+                height: 100px;
+                width: 150px;
+                display: flex;
             }
             .caixaPETITA{
                 border: 1px solid black;
@@ -22,27 +30,12 @@
                 height: 20px;
                 text-align: center;
             }
-            .verd{
-                background-color: lightgreen;
-            }
-            .vermell{
-                background-color: lightcoral;
-            }
-            .blau{
-                background-color: lightskyblue;
-            }
-            .groc{
-                background-color: lightgoldenrodyellow;
-            }
-            .titol{
-                text-align: center;
-            }
-            .tarjeta{
-                height: 100px;
-                width: 150px;
-                display: flex;
-                border: 1px solid black;
-            }
+            
+            /* colors pastis propis */
+            .verd{      background-color: lightgreen;}
+            .vermell{   background-color: lightcoral;}
+            .blau{      background-color: lightskyblue;}
+            .groc{      background-color: lightgoldenrodyellow;}
 
         </style>
 
@@ -52,14 +45,48 @@
 
         <div>
             Flex direction
+            <div style="display: flex;">
 
-            <div class="titol caixa">Row
-                <div class="tarjeta">
-                    <div class="caixaPETITA verd">A</div>
-                    <div class="caixaPETITA vermell">B</div>
-                    <div class="caixaPETITA blau">C</div>
-                    <div class="caixaPETITA groc">D</div>
+                <div class="titol caixa" s>
+                    Row
+                        <div class="tarjeta" style="flex-direction: row;">
+                            <div class="caixaPETITA verd">01</div>
+                            <div class="caixaPETITA vermell">02</div>
+                            <div class="caixaPETITA blau">03</div>
+                            <div class="caixaPETITA groc">04</div>
+                        </div>
                 </div>
+
+                <div class="titol caixa">
+                    Row reverse
+                        <div class="tarjeta" style="flex-direction: row-reverse;">
+                            <div class="caixaPETITA verd">01</div>
+                            <div class="caixaPETITA vermell">02</div>
+                            <div class="caixaPETITA blau">03</div>
+                            <div class="caixaPETITA groc">04</div>
+                        </div>
+                </div>
+                
+                <div class="titol caixa">
+                    Column
+                        <div class="tarjeta" style="flex-direction: column;">
+                            <div class="caixaPETITA verd">01</div>
+                            <div class="caixaPETITA vermell">02</div>
+                            <div class="caixaPETITA blau">03</div>
+                            <div class="caixaPETITA groc">04</div>
+                        </div>
+                </div>
+                
+                <div class="titol caixa">
+                    Column reverse
+                        <div class="tarjeta" style="flex-direction: column-reverse;">
+                            <div class="caixaPETITA verd">01</div>
+                            <div class="caixaPETITA vermell">02</div>
+                            <div class="caixaPETITA blau">03</div>
+                            <div class="caixaPETITA groc">04</div>
+                        </div>
+                </div>
+
             </div>
 
         </div>
