@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display FLEX</title>
+        <meta charset="utf-8">
+        <style>
+            header{
+                text-align: center;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            .caixa{
+                border: 2px solid black;
+                margin: 2px;
+                width: 150px;
+            }
+            .caixaPETITA{
+                border: 1px solid black;
+                border-style: dashed;
+                margin: 2px;
+                width: 25px;
+                height: 20px;
+                text-align: center;
+            }
+            .verd{
+                background-color: lightgreen;
+            }
+            .vermell{
+                background-color: lightcoral;
+            }
+            .blau{
+                background-color: lightskyblue;
+            }
+            .groc{
+                background-color: lightgoldenrodyellow;
+            }
+            .titol{
+                text-align: center;
+            }
+            .tarjeta{
+                height: 100px;
+                width: 150px;
+                display: flex;
+                border: 1px solid black;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header><b>Exemple de visualització display flex</b></header>
+
+        <div>
+            Flex direction
+
+            <div class="titol caixa">Row
+                <div class="tarjeta">
+                    <div class="caixaPETITA verd">A</div>
+                    <div class="caixaPETITA vermell">B</div>
+                    <div class="caixaPETITA blau">C</div>
+                    <div class="caixaPETITA groc">D</div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
