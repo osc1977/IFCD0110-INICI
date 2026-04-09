@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Distribucio contingut</title>
+        <meta charset="utf-8">
+        <style>
+            header, footer{
+                text-align: center;
+                height: 800px;
+                background-color: lightsteelblue;
+                position: relative;
+            }
+            nav, main, aside{
+                position: absolute;
+                height: 500px;
+            }
+            .cxCap{
+                background-color: rgb(243, 122, 122);
+            }
+            .cxPeu{
+                position: absolute;
+                top: 640px;
+                left: 550px;
+                background-color: rgb(243, 122, 122);
+            }
+            .cxMen{
+                width: 100px;
+                background-color: rgb(243, 122, 122);
+            }
+            .cxPrin{
+                width: 600px;
+                background-color: rgb(112, 158, 226);
+                left: 100px;
+            }
+            .cxAsi{
+                width: 100px;
+                background-color: rgb(112, 226, 141);
+                left: 700px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Capçalera -->
+        <header style="height: 40px;">
+            <h1>Utilizant caixes semàntiques</h1>
+        </header>
+        
+        <nav class="cxMen">
+            Menu
+        </nav>
+        
+        <main class="cxPrin">
+            Contingut principal
+        </main>
+
+        <aside class="cxAsi">
+            Aside
+        </aside>
+        
+        <!-- Peu de pàgina -->
+        <footer style="height: 15px;">
+            <h6>Desenvolupat per Osc1977</h6>
+        </footer>
+    </body>
+</html>
