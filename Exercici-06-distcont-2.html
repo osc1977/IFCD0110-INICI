@@ -4,18 +4,96 @@
         <title>Distribucio contingut</title>
         <meta charset="utf-8">
         <style>
-
+            .header, .footer{
+                text-align: center;
+                width: 792px;
+                background-color: lightsteelblue;
+                position: relative;
+            }
+            .nav, .main, .aside{
+                position: absolute;
+                height: 500px;
+                text-align: center;
+            }
+            .article{
+                height: 150px;
+                width: 250px;
+                border: 2px solid black;
+                margin: 4px;
+                padding: 4px;
+                text-align: left;                
+            }
+            .ord{
+                display: flex;
+                flex-direction: row;
+            }
+            .cxCap{
+                background-color: rgb(243, 122, 122);
+            }
+            .cxPeu{
+                position: absolute;
+                top: 40px;
+                background-color: rgb(243, 122, 122);
+            }
+            .cxMen{
+                width: 100px;
+                background-color: rgb(243, 122, 122);
+            }
+            .cxPrin{
+                width: 600px;
+                background-color: rgb(112, 158, 226);
+                left: 100px;
+            }
+            .cxAsi{
+                width: 100px;
+                background-color: rgb(112, 226, 141);
+                left: 700px;
+            }
         </style>
     </head>
     <body>
-        <header>
-            <h1>Utilitzant caixes divs</h1>
-        </header>
-
-        <main></main>
+        <!-- Capçalera -->
+        <div class="header" style="height: 40px;">
+            <h1>Utilizant caixes divs</h1>
+        </div>
         
-        <footer>
+        <div class="nav cxMen">
+            <h3>Menu</h3>
+        </div>
+        
+        <div class="main cxPrin">
+            <h3>Contingut principal</h3>
+            <div class="ord" style="text-align: center; justify-content: center;">
+                <div>
+                    Sección primera
+                    <div class="article" style="background-color: lightblue;">
+                        Article de contigut num-1
+                    </div>
+                    <div class="article" style="background-color: lightblue;">
+                        Article de contigut num-2
+                    </div>
+                </div>
+                
+                <div>
+                    Sección segona
+                    <div class="article" style="background-color: lightblue;">
+                        Article de contigut num-3
+                    </div>
+                    <div class="article" style="background-color: lightblue;">
+                        Article de contigut num-4
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lloc on aniran els bunners, ads -->
+        <div class="aside cxAsi">
+            <h3>Aside</h3>
+        </div>
+        
+        <!-- Peu de pàgina -->
+        <div class="footer" style="height: 15px; top: 475px;">
             <h6>Desenvolupat per Osc1977</h6>
-        </footer>
+        </div>
     </body>
 </html>

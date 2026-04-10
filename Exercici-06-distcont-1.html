@@ -13,6 +13,21 @@
             nav, main, aside{
                 position: absolute;
                 height: 500px;
+                text-align: center;
+            }
+            article{
+                height: 150px;
+                width: 250px;
+                border: 2px solid black;
+                margin: 4px;
+                padding: 4px;
+                text-align: left;                
+            }
+
+
+            .ord{
+                display: flex;
+                flex-direction: row;
             }
             .cxCap{
                 background-color: rgb(243, 122, 122);
@@ -45,15 +60,36 @@
         </header>
         
         <nav class="cxMen">
-            Menu
+            <h3>Menu</h3>
         </nav>
         
         <main class="cxPrin">
-            Contingut principal
+            <h3>Contingut principal</h3>
+            <div class="ord" style="text-align: center; justify-content: center;">
+                <section>
+                    Sección primera
+                    <article style="background-color: lightblue;">
+                        Article de contigut num-1
+                    </article>
+                    <article style="background-color: lightblue;">
+                        Article de contigut num-2
+                    </article>
+                </section>
+                
+                <section>
+                    Sección segona
+                    <article style="background-color: lightblue;">
+                        Article de contigut num-3
+                    </article>
+                    <article style="background-color: lightblue;">
+                        Article de contigut num-4
+                    </article>
+                </section>
+            </div>
         </main>
 
         <aside class="cxAsi">
-            Aside
+            <h3>Aside</h3>
         </aside>
         
         <!-- Peu de pàgina -->
