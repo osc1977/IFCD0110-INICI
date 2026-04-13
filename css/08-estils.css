@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+ul{
+    /* margin: 3px; */
+    /* padding: 3px; */
+}
+li{
+    display: inline;
+}
+footer{
+    font-size: x-small;
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
