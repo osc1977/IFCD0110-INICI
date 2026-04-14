@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercici amb frames principals</title>
+    </head>
+
+    <!-- <body> -->
+
+        <!-- Inserció de marcs realitzat amb frames (Inserció d'un marc extern: al peu de pàgina afegim un marc al frame menu) -->
+        <frameset rows=10%,*,5% frameborder="0" noresize>
+            <frame src="./09-marcos/09-frame-cap.html"></frame>
+            <frameset cols=15%,* frameborder="0" noresize>
+                <frame src="./09-marcos/09-frame-menu.html"></frame>
+                <frame src="./09-marcos/09-frame-main.html" name="contingut"></frame>
+            </frameset>
+            <frame src="./09-marcos/09-frame-peu.html"></frame>
+        </frameset>
+
+    <!-- </body> -->
+</html>
