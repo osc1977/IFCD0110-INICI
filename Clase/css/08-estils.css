@@ -3,6 +3,7 @@ header{
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
+    background-color: antiquewhite;
 }
 ul{
     /* margin: 3px; */
@@ -14,6 +15,7 @@ li{
 footer{
     font-size: x-small;
     text-align: center;
+    background-color: antiquewhite;
 }
 nav{
     display: flex;
