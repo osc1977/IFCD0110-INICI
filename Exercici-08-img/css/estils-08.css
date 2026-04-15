@@ -1,0 +1,28 @@
+.peu{
+    background-color: lightslategray;
+    text-align: center;
+    font-size: xx-small;
+    color: white;
+}
+.boton{
+    background-color: rgb(236, 147, 83);
+    border: 2px;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.cap{
+    background-color: rgb(240, 238, 238);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
