@@ -30,30 +30,39 @@
     font-size: xx-large;
     text-align: center;
 }
+.tit-FICHA{
+    margin: 5px;
+    margin-bottom: 12px;
+    font-size: 25px;
+    text-align: left;
+}
 .text{
     text-align: left;
 }
 .img-GR{
-    align-content: center;
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cara{
+    width: 500px;
 }
 .img-PT{
-    align-content: center;
-    width: 100px;
+    float: left;
+    width: 97px;
+    margin-right: 20px;
 }
 .ord{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .ficha{
-    height: ;
     width: 250px;
+    height: 335px;
     border: 2px solid black;
     margin: 4px;
-    padding: 4px;
+    padding: 10px;
     text-align: left;                
 }
 
