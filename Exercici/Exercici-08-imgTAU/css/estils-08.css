@@ -65,4 +65,34 @@
     padding: 10px;
     text-align: left;                
 }
-
+/* Aqui posarem els estils de les taules */
+table, th, td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    text-align: center;
+    border-radius: 5px;
+    border-color: black;
+    border-spacing: 7px;
+    margin-left: 25px;
+    padding: 5px;
+    font-size: small;
+    }
+td:hover {
+    background-color: #00ffff;
+}
+tr:nth-child(even) {
+    background-color: #f0dca6;
+}
+table{
+    border-color: black;
+    border-radius: 5px;
+    height: 200px;
+}
+.horari{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 335px;
+    padding: 4px;
+    text-align: left;                
+}
