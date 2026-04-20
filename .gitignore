@@ -1,0 +1,9 @@
+# Per a que ignori una carpeta
+Carpeta/
+
+# Per a que ignori una carpeta en nivell superior
+**/carpeta/
+
+
+# Per a que ignori arxius amb una extensio determinada
+*.mkv
