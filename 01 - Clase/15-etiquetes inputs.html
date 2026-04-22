@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Input</title>
+    <link rel="icon" href="./img/cine.ico" type="image/x-icon">
+    <style>
+        header, footer{
+            background-color: blue;
+            color: bisque;
+            text-align: center;
+        }
+        header{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+        }
+        footer{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+        }
+        nav, aside{
+            background-color: aquamarine;
+            width: 20%;
+            border-radius: 15px;
+        }
+        main{
+            text-align: center;
+            width: 60%;
+        }
+        .contenidor{
+            display: flex;
+        }
+        ul{
+            list-style: none;
+            margin: 0px;
+        }
+        button{
+            background-color: aqua;
+            border-radius: 25px;
+            padding: 7px;
+            margin-left: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Exercici per practicar botons i inputs.
+    </header>
+
+    <div class="contenidor">
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.microsoft.com/es-es/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook" target="_blank">Microsoft</a></li>
+                <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+                <li><a href="https://es.search.yahoo.com/?fr2=p:fprd,mkt:es" target="_blank">Yahoo</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <br>
+            <div>
+                Contingut
+                <button disabled>Boto inicial</button>
+                <button onclick="alert ('Bon dia amic')">Fes click</button>         <!-- S'obre una finestre d'alerta -->
+                <button ondblclick="alert ('Bon dia amic')">Google</button>         <!-- S'obre una finestre d'alerta al fer doble click-->
+                <button>Yahoo</button>
+            </div>
+            <hr>
+            <div>
+                <br>
+                Tipus de botons
+                <form action="./prova.html">
+                    <input type="text" name="nom">
+                        <button type="button">Boto normal</button>
+                        <button type="reset">Netega</button>
+                        <button type="submit">Envia formulari</button>
+                </form>
+            </div>
+            <br>
+            <hr>
+            <div>
+                <h2>Text</h2>
+                <label tabindex="1" for="nom">Nom:</label><br>
+                <input type="text" name="nom"><br>
+                <label tabindex="2" for="cognom">Last name:</label><br>
+                <input type="text" name="cognom">
+            </div>
+            <form>
+                <br>
+                <hr>
+                <h2>Quina es la teva fruita preferida</h2>
+                <input type="checkbox" id="rpomes" name="fruita" value="pomes">
+                <label for="rpomes">Pomes</label>
+                <input type="checkbox" id="rperes" name="fruita" value="peres">
+                <label for="rperes">Peres</label>
+                <input type="checkbox" id="rtaronges" name="fruita" value="taronges">
+                <label for="rtaronges">Taronges</label>
+                
+                <br>
+                <hr>
+                <h2>Quin es el teu gènere</h2>
+                <input type="radio" id="home" name="genere" value="home">
+                <label for="home">Home</label>
+                <input type="radio" id="dona" name="genere" value="dona">
+                <label for="dona">Dona</label>
+                
+                <br>
+                <hr>
+                <h2>Quin es el teu vehicle</h2>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bici">
+                <label for="vehicle1"> Tinc una bicicleta</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Coche">
+                <label for="vehicle2"> Tinc un cotxe</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Vaixell">
+                <label for="vehicle3"> Tinc un vaixell</label>
+            </form>
+            <br>
+
+        </main>
+        
+        <aside>
+            Anuncis
+        </aside>
+        
+    </div>
+    
+    <footer>
+        Desenvolupat per Oscar (2026).
+    </footer>
+</body>
