@@ -116,8 +116,158 @@
                 <label for="vehicle2"> Tinc un cotxe</label><br>
                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Vaixell">
                 <label for="vehicle3"> Tinc un vaixell</label>
+                
+                <br>
+                <hr>
+                <h2>Etiqueta PASSWORD</h2>
+                <label for="usuari">Usuari:</label><br>
+                <input type="text" id="usuari" name="usuari"><br>
+                <label for="contrasenya">Clau de pas:</label><br>
+                <input type="password" id="contrasenya" name="contrasenya"><br>
+                <hr>
             </form>
+                Formulari per provar input button. <br>
+                <form action="./12-marquee.html">
+                    <label for="nom">First name:</label><br>
+                    <input type="text" id="nom" name="nom" value="Nom"><br>
+                    <label for="cognom">Last name:</label><br>
+                    <input type="text" id="cognom" name="cognom" value="Cognom"><br>
+                    <input type="submit" value="Enviar"><br>
+                </form>
             <br>
+            <hr>
+            <h2>Per triar el color</h2>
+            <label for="fcolor">Triar el color que mes t'agradi</label><br>
+            <input type="color" name="fcolor" id="fcolor">
+            <hr>
+            
+            <h2>Input de tipus date</h2>
+            <label for="fdate">Ingresa la data de naixament</label><br>
+            <input type="date" name="fdate" id="fdate"><br>
+            <label for="local">Ingresa la data i l'hora</label><br>
+            <input type="datetime-local" name="local" id="local"><br>
+            <hr>
+            <form action="./12-marquee.html">
+                <h2>Input de tipus email</h2>
+                <label for="correu">Ingressa el teu correu electronic:</label><br>
+                <input type="email" id="correu" name="correu">
+                <input type="submit" name="correu" id="correu" value="Enviar correu">
+                <br>
+            </form>
+            
+            <hr>
+            
+            <form>
+                <h2>Input de tipus image</h2>
+                <input type="image" src="./img/ball-b.jpg" alt="Enviar" width="90px" height="60px">
+                <br>
+                <hr>
+                <h2>Input de tipus ficher</h2>
+                <label for="fichero">Selecciona el fitxer:</label>
+                <input type="file" id="fichero" name="fichero" accept=".zip, .png, .jpg">
+                <br>
+                <br>
+            </form>
+            
+            <hr>
+            
+            <form>
+                <h2>Input de tipus hidden</h2>
+                <label for="tamagat">Type amagat:</label>
+                <input type="text" id="tamagat" name="tamagat" value="hola"><br><br>
+                <input type="hidden" id="ocult" name="ocult" value="2008">
+                <input type="submit" name="enviar" value="Enviar">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input per posar el mes i l'any</h2>
+                <label for="idmes">Aniversari (mes i any):</label>
+                <input type="month" id="idmes" name="idmes">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input per posar numeros</h2>
+                <label for="cantidad">Quants anys tens:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="120" step="10">
+                
+                <h2>Input range</h2>
+                <label for="range">Gradua el volum</label>
+                <input type="range" name="rango" id="rango" min="0" max="50" step="25" value="50">
+                <br>
+                <br>
+            </form>
+            
+            <form action="https://www.caprabo.es/">
+                <h2>Input per fer cerques(busquedes)</h2>
+                <label for="busca">Buscar en Google:</label>
+                <input type="search" id="busca" name="busca">
+                <!-- faltaria programar el cercador -->
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input per possar el telefon</h2>
+                <label for="telefon">Posa el teu número de telefon:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="111-22-333" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input per possar l'hora</h2>
+                <label for="hora">Select a time:</label>
+                <input type="time" id="hora" name="hora">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input URL</h2>
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input Tipo semanal</h2>
+                <label for="sem">Selecciona una semana:</label>
+                <input type="week" id="sem" name="sem">
+                <br>
+                <br>
+            </form>
+            
+            <form>
+                <h2>Input Select</h2>
+                <label for="coche">Escoge un vehiculo:</label>
+                    <select name="coche" id="coche">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                <br>
+                <br>
+            </form>
+            
+            <hr>
+            Molts dels inputs s'haurien de programar per aconseguir el seu efecte d'enviar.<br>
+            Per exemple, URL que vagi a la pàgina que posses.<br>
+            Pots utilitzar REGEXP per buscar patrons i finalització la progrmació dels inputs.<br>
+            <hr>
+            <br>
+            <hr>
+            
+            <h2>Menu</h2>
+            <a href="./12-marquee.html" target="lamevapagina">Pagina 1</a><br>
+            <a href="./11-taules.html" target="lamevapagina">PAgina 2</a><br>
+            <h2>Contingut</h2>
+            <iframe name="lamevapagina" width="100%" height="400px"></iframe>
 
         </main>
         
