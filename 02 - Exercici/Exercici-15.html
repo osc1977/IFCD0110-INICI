@@ -5,32 +5,41 @@
         <title>Exercici 15</title>
         <link rel="icon" href="./img/cine.ico" type="image/x-icon">
         <style>
+            body{
+                top: 40px;
+                margin: 0px;
+                padding: 0px;
+            }
             header, footer{
                 text-align: center;
             }
             header{
+                /*-- position: fixed; --*/
                 background-color: aquamarine;
                 width: 100%;
                 height: 40px;
             }
             main{
                 position: relative;
-                top: 0px;
+                /*-- top: 40px; --*/
                 background-color: blanchedalmond;
-                width: 550px;
+                width: 80%;
             }
             nav{
                 background-color: lightsteelblue;
-                width: 200px;
+                width: 20%;
                 height: 550px;
+                position: fixed;
+                left: 80%;
             }
             footer{
+                position: absolute;
                 background-color: lightslategrey;
                 height: 20px;
             }
             .caixa{
-                height: 200px;
-                width: 300px;
+                height: 266px;
+                width: 270px;
                 display: inline-block;
                 border-radius: 10px;
                 background-color: azure;
@@ -38,6 +47,25 @@
             .contenidor{
                 display: inline-block;
             }
+            .cxFIX{
+                top: 40px;
+                position: fixed;
+                background-color: cornflowerblue;
+            }
+/*--        .caixaREL{
+                position: relative;
+                left: 200px;
+                top: -750px;
+                background-color: lightpink;
+            }
+            .caixaABS{
+                position: absolute;
+                left: 450px;
+                top: 220px;
+                width: 220px;
+                height: 350px;
+                background-color: limegreen;
+            } --*/
         </style>
     </head>
     
@@ -45,6 +73,10 @@
         <header>
             Exercici per practicar estructures de pàgina web
         </header>
+
+        <nav class="cxFIX">
+            Menu
+        </nav>
 
         <main>
             <div>
@@ -62,11 +94,20 @@
                     Imatge 2
                 </div>
             </article>
+            <article class="caixa">
+                Article núm 3
+                <div>
+                    Imatge 3
+                </div>
+            </article>
+            <article class="caixa">
+                Article núm 4
+                <div>
+                    Imatge 4
+                </div>
+            </article>
         </main>
 
-        <nav>
-            Menu
-        </nav>
 
         <footer>Desenvolupat per Oscar (2026)</footer>
     </body>
