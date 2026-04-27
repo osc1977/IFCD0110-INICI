@@ -1,0 +1,36 @@
+.capçalera, .peu{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* COLOR DELS ENLLAÇOS: aixo son les pseudoclases */
+    /* Enllaç no visitat */
+        a:link {
+        color: red;
+         text-decoration: none;
+        }
+    /* Enllaç visitat */
+        a:visited {
+        color: green
+}
+    /* Pasas per sobre l'enllaç */
+        a:hover {
+        color: orange;
+        text-decoration: line-through;
+}
+    /* Quan clickas sobre l'enllaç */
+        a:active {
+        color: yellow;
+        text-decoration: underline;
+        }
+    /* Quitar puntos y márgenes de la lista */
+    ul {
+            list-style-type: none; /* Elimina las viñetas */
+            margin-top: 10px;          /* Elimina el margen por defecto */
+            padding: 0;            /* Elimina el relleno por defecto */
+            display: flex; 
+            justify-content: space-around;
+            background-color: lightgreen;
+        }
