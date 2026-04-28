@@ -37,6 +37,12 @@ h2{
 ul{
     list-style: square;
 }
+/* section {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    scroll-margin-top: 90px; /* per evitar solapament 
+} */
 
 
 .principal{
