@@ -1,1 +1,86 @@
-*
+*{
+    font-family: sans-serif;
+    font-size: 10px;
+    margin: 0%;
+}
+
+/* -------------------- ETIQUETES -------------------- */
+header, footer{
+    position: fixed;
+    width: 100%;
+    background-color: #211b72;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+}
+header{
+    top: 0;
+    height: 7rem;
+}
+footer{
+    bottom: 0;
+    height: 1.5rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: initial;
+}
+
+section:nth-child(even) > article:nth-child(odd), section:nth-child(odd) > article:nth-child(even){
+    background-color: #000000;
+    color: #ffffff;
+}
+section.jugador:nth-child(even){
+    background-color: #08fa00;
+}
+section.jugador:nth-child(odd){
+    background-color: #fa0000;
+}
+
+
+
+/* -------------------- CLASES -------------------- */
+.global{
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 10rem;
+}
+.fila, .casella, .jugador{
+    height: 6rem;
+}
+.fila, .jugador{
+    width: 48rem;
+}
+.jugador{
+    align-content: center;
+    text-align: center;
+    background-color: #5f9ea0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.fila{
+    display: flex;
+    text-align: center;
+}
+.casella{
+    width: 6rem;
+    border: 1px solid #000000;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.colRED{
+    color: #fa0000;
+}
+.colGRE{
+    color: #08fa00;
+}
+
