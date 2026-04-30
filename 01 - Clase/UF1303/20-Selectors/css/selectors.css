@@ -100,7 +100,9 @@ article{
     width: 100%;
     box-sizing: border-box;
 }
-article:nth-child(odd) > .titol{
+section:nth-child(even) > article:nth-child(odd) > .titol{
+/* article:nth-child(odd) > :nth-child(even){ */
+/* section:nth-child(even) .titol{ */
     background-color: #ffff00;
 }
 article:nth-child(even) > .titol{
