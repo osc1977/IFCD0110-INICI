@@ -1,0 +1,104 @@
+*{
+    font-size: 15px;
+    margin: 0;
+}
+/* etiquetes globlas */
+header, footer{
+    z-index: 99;
+    position: fixed;
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+/* etiquetes individuals */
+header{
+    font-size: 2rem;
+    height: 2.5rem;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+nav{
+    display: block;
+    position: absolute;
+    background-color: #ffe4c4;
+    width: 20%;
+    height: 100%;
+    top: 2.5rem;
+}
+
+/* ---------- per poder fer menus desplegables ---------- */
+ul{
+    display: inline;
+}
+li{
+    list-style-type: none;
+    text-align: center;
+    /* padding 0; */
+    width: 100px;
+    margin: 2px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+li:hover{
+    cursor: pointer;
+    background-color: #7fffd4;
+    display: inline-block;
+}
+li:hover>ul>li{
+    display: block;
+    /* position: relative; */
+    top: -19px;
+    /* background-color: #283583;
+    color: #ffe4c4; */
+}
+li:hover>ul>li>ul>li{
+    /* position: relative; */
+    /* top: -19px; */
+    /* display: block; */
+    /* background-color: #f10e0e;
+    color: #0a0601; */
+}
+li ul{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 70px;
+}
+li:hover>ul{
+    display: inline-block;
+}
+li li{
+    /* width: 100px; */
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+li> ul{
+    display: none;
+    position: relative;
+    top: -19px;
+    /* left: 75px; */
+}
+
+
+/*
+ul{
+    display: inline;
+}
+li>ul>li.hover{
+    background-color: brown;
+    color: #ff0000;
+}
+ul, li{
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+}
+    */

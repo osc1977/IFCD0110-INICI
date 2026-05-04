@@ -33,6 +33,7 @@ h2{
     border: 1px solid #000000;
     align-content: center;
     box-sizing: border-box;
+    margin: 1rem;
 }
 .fila{
     align-content: center;
@@ -40,14 +41,56 @@ h2{
     background-color: #5f9ea0;
     border: 1px solid #000000;
     box-sizing: border-box;
-    height: 6rem;
+    height: 8rem;
     width: 48rem;
     display: flex;
     text-align: center;
+    margin: 1rem;
+
 }
 .contenido{
     display: flex;
-    flex-direction: column;
+    flex-direc: column;
     position: relative;
+    justify-content: center;
     top: 10rem;
 }
+
+/* -------------------- tipus de cursors -------------------- */
+.alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.col-resize {cursor: col-resize;}
+.context-menu {cursor: context-menu;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: grab;}
+.grabbing {cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.vertical-text{cursor:vertical-text}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
