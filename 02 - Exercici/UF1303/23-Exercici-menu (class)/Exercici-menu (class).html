@@ -6,7 +6,7 @@
         <title>Menus</title>
 
         <!-- Esto sirve llamar los estilos de un documento css -->
-        <link rel="stylesheet" href="./css/estils-menu.css" />
+        <link rel="stylesheet" href="./css/estils-menu-class.css" />
 
         <!-- Esto sirve para poner un icono en la pestaña de la página -->
         <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
@@ -25,37 +25,37 @@
         </header>
 
         <!-- Esta etiqueta sirve para poner los elementos de un posible menu, ... -->
-        <nav>
-            <div class="menu">
+        <nav class="navegador">
+            <div class="listado">
                 <article>
                     Creación de menus
                 </article>
-                <ul>
-                    <li>
+                <ul class="menu">
+                    <li class="item">
                         Opció 1
-                        <ul>
-                            <li>Opció 1-A</li>
-                            <li>Opció 1-B</li>
-                            <li>Opció 1-C</li>
+                        <ul class="menu">
+                            <li class="item">Opció 1-A</li>
+                            <li class="item">Opció 1-B</li>
+                            <li class="item">Opció 1-C</li>
                         </ul>
                     </li>
-                    <li>Opció 2</li>
-                    <li>
+                    <li class="item">Opció 2</li>
+                    <li class="item">
                         Opció 3
-                        <ul>
-                            <li>Opció 3-A</li>
-                            <li>Opció 3-B</li>
-                            <li>
+                        <ul class="menu">
+                            <li class="item">Opció 3-A</li>
+                            <li class="item">Opció 3-B</li>
+                            <li class="item">
                                 Opció 3-C
-                                <ul>
-                                    <li>Opció 3-C-1</li>
-                                    <li>Opció 3-C-2</li>
+                                <ul class="menu">
+                                    <li class="item">Opció 3-C-1</li>
+                                    <li class="item">Opció 3-C-2</li>
                                 </ul>
                             </li>
-                            <li>Opció 4-C</li>
+                            <li class="item">Opció 4-C</li>
                         </ul>
                     </li>
-                    <li>Opció 4</li>
+                    <li class="item">Opció 4</li>
                 </ul>
             </div>
         </nav>

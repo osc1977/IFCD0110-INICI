@@ -12,8 +12,6 @@ header, footer{
     align-content: center;
     width: 100%;
 }
-
-/* etiquetes individuals */
 header{
     font-size: 2rem;
     height: 2.5rem;
@@ -25,22 +23,22 @@ footer{
     height: 1rem;
 }
 
-.menu{
+.listado{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
 /* ---------- per poder fer menus desplegables ---------- */
-nav{
+
+.navegador{
     /* display: block; */
      /* Amb fixed queda ancorat a la pantalla independentment del desplaçament, igual que el header i el footer.*/
     display: flex;
     justify-content: center;
     position: fixed;
     background-color: #ffe4c4;
-    /* equivalent als 165px (165 ÷ 15 = 11). És important que li i nav tinguin exactament el mateix valor, perquè el left: 10rem del submenú depèn d'aquesta amplada. */
+    /* equivalent als 165px (165 ÷ 15 = 11). És important que li i .navegador tinguin exactament el mateix valor, perquè el left: 10rem del submenú depèn d'aquesta amplada. */
     width: 11rem;
     height: 100%;
     top: 2.5rem;
@@ -48,14 +46,17 @@ nav{
     bottom: 0.6rem;
     left: 0;
 }
-nav > ul{
+.navegador .menu{
     display: block;
     width: 100%;
+    align-items: center;
 }
-ul{
+.menu{
     padding: 0;
+    /* display: flex; */
+    /* justify-content: center; */
 }
-li{
+.item{
     list-style-type: none;
     text-align: center;
     width: 6rem;
@@ -64,20 +65,20 @@ li{
     /* Aquesta és la clau dels submenús. Quan el fill ul té position: absolute, es posiciona respecte el seu ancestre posicionat més proper. Si li no té position: relative, el submenú surt disparat cap a un lloc inesperat del document. Amb relative, cada submenú surt ancorat al seu li pare. */
     position: relative;
 }
-li> ul{
+.item> .menu{
     display: none;
     position: absolute;
     top: 0;
     left: 6rem;
 }
-li:hover{
-    cursor: pointer;
-    background-color: #7fffd4;
-}
-li > ul > li{
+.item > .menu > .item{
     border-radius: 15px;
     background-color: #ffe4c4;
 }
-li:hover>ul{
+.menu .item:hover{
+    cursor: pointer;
+    background-color: #7fffd4;
+}
+.item:hover>.menu{
     display: block;
 }
