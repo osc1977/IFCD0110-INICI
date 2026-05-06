@@ -37,19 +37,50 @@ main{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+.ladillo{
+    font-size: large;
+    text-align: center;
+}
 .contenidor{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem;
-    gap: 1rem;
+    gap: 5rem;
 }
 .cuadrat{
-    height: 6rem;
-    width: 6rem;
+    height: 10rem;
+    width: 10rem;
     border: 1px solid #000000;
     /* background-color: #283583; */
 }
-.translate:hover{
+
+/* ----- TRANSFORM ------------------------------------------------------------ */
+.trasllat:hover{
     transform: translate(50px, 50px)
 }
+.rotar:hover{
+    transform: rotate(45deg);
+}
+.escala:hover{
+    transform: scale(1.8);
+}
+.sesgar:hover{
+    transform: skewX(20deg);
+}
+.mezcla:hover{
+    transform: translate(50px, 50px) rotate(45deg) scale(1.8) skewX(20deg);
+}
+.rot3d:hover{
+    transform: rotateY(-67deg);
+}
+
+
+
+
+.rot3d:hover ~ .targeta .caixa{
+    transform: rotateY(-67deg);
+}
+
+
+

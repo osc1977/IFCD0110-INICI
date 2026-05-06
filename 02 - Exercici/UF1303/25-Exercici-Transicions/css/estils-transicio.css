@@ -1,0 +1,49 @@
+*{
+    font-size: 1rem; /* Mida 16px */
+    margin: 0;
+}
+/* ---------- etiquetes globlas ---------- */
+header, footer{
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* ---------- etiquetes individuals ---------- */
+header{
+    font-size: 2.75rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+main{
+    top: 4rem;
+    bottom: 0.6rem;
+    position: absolute; /* (si el poso en relatiu no el pinta) */
+    background-color: #0ee60e;
+    width: 100%;
+}
+
+/* ---------- clases d'etiquetes ---------- */
+
+.caixa{
+    width: 125px;
+    height: 125px;
+    background-color: red;
+    transition: width 1.5s, height 1.5s, background-color 1.5s, color 1.5s;
+}
+    /* ---------- tota transició ha de tenir-lo en el hover per a que es puguir visualitzar ---------- */
+
+.caixa:hover{
+    width: 500px;
+    height: 500px;
+    background-color: #283583;
+    color: #ffe4c4;
+}
