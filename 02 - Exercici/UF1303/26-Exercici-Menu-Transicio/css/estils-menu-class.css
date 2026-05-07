@@ -21,14 +21,12 @@ footer{
     bottom: 0;
     font-size: 0.6rem;
     height: 1rem;
-}
-
+},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 .listado{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 /* ---------- per poder fer menus desplegables ---------- */
 
 .navegador{
@@ -79,12 +77,13 @@ footer{
 .menu > .submenu > .menu{
     border-radius: 15px;
     background-color: #ffe4c4;
+    /* transform: translate(width 150px, height 150px); */
 }
 .submenu .menu:hover{
     cursor: pointer;
-    width: 6rem;
+    /* width: 6rem; */
     background-color: #69ff23;
-    transition: opacity 5s;
+    /* transition: opacity 5s; */
 }
 .menu:hover>.submenu{
     display: block;

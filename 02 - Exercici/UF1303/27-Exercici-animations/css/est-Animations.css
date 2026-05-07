@@ -1,0 +1,134 @@
+/* ---------- selector universal ---------- */
+*{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- propietats comunes ---------- */
+header, footer{
+    z-index: 99;
+    position: fixed;
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* ---------- etiquetes individuals ---------- */
+header{
+    font-size: 1.5rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+main{
+    padding: 1rem;
+    position: absolute;
+    background-color: rgb(255, 240, 230);
+    top: 4rem;
+    bottom: 1rem;
+    width: 100%;
+    height: calc(100% - 1rem);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 1rem; */
+}
+.caixa{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #283583;
+    background-color: #ff9a52;
+    color: #283583;
+    text-align: center;
+    align-content: center;
+    left: 0;
+    /* ---------- El element que aplica la animació per ---------- */
+}
+
+/* ---------- Codi d'animació ---------- */
+@keyframes AniColor {
+    from {
+        background-color: #ffff00;
+        color: #ff0000;
+    }
+    to {
+        background-color: #ff0000;
+        color: #ffff00;
+        left: 250px; /* ----- Desplaçament ----- */
+    }
+}
+@keyframes AniDespl {
+    0%   {
+        background-color: red;
+        color: #ffff00;
+    }
+    25%  {
+        background-color: yellow;
+        color: #ff0000;
+    }
+    50%  {
+        background-color: blue;
+        color: #ffffff;
+    }
+    100% {
+        background-color: green;
+        color: #ffff00;
+    }
+}
+@keyframes AniVaris {
+    0% {
+        background-color: #fc14fc;
+        color: #fbff0c;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: #2bfdec;
+        color: #ff7b00;
+        left: 250px; /* ----- Desplaçament ----- */
+        top: 250px;
+        transform: rotate(90deg);
+    }
+    80% {
+        background-color: #ffa600;
+        color: #0e0183;
+        left: 250px; /* ----- Desplaçament ----- */
+        top: 250px;
+        transform: rotate(270deg);
+    }
+    100% {
+        background-color: #fc14fc;
+        color: #fbff0c;
+        transform: rotate(360deg);
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+    }
+}
+.animacio1{
+    animation-name: AniColor;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+}
+.animacio2{
+    animation-name: AniDespl;
+    animation-duration: 6s;
+    animation-delay: 6s;
+    animation-iteration-count: 5;
+}
+.animacio3{
+    animation-name: AniVaris;
+    animation-duration: 6s;
+    animation-delay: 12s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,287 @@
+/* ---------- selector universal ---------- */
+*{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- propietats comunes ---------- */
+header, footer{
+    z-index: 99;
+    position: fixed;
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* ---------- etiquetes individuals ---------- */
+header{
+    font-size: 1.5rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+main{
+    padding: 1rem;
+    position: absolute;
+    background-color: rgb(255, 240, 230);
+    top: 4rem;
+    bottom: 1rem;
+    width: 100%;
+    height: calc(100% - 1rem);
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 1rem; */
+}
+h1{
+    font-size: 2rem;
+}
+.caixa{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #283583;
+    background-color: #ff9a52;
+    color: #283583;
+    font-size: 3rem;
+    text-align: center;
+    align-content: center;
+    left: 0;
+    top: 0;
+    opacity: 0%;
+    /* ---------- El element que aplica la animació per ---------- */
+}
+
+/* ---------- Codi d'animació ---------- */
+@keyframes Ani-O {
+    from {
+        background-color: #ff9a52;
+        color: #283583;
+        left: 0;
+        top: 0;
+        opacity: 1%;
+    }
+    to {
+        background-color: #ff0000;
+        color: #93fbff;
+        left: calc(50% - 185px); /* 200px; */ /* ----- Desplaçament ----- */
+        top: 300px;
+        opacity: 100%;
+    }
+}
+@keyframes Ani-S {
+    0%   {
+        background-color: #ff9a52;
+        color: #283583;
+        left: 0px;
+        top: 0px;
+        opacity: 0%;
+    }
+    50%  {
+        background-color: #510080;
+        color: #ffff00;
+        transform: rotate(1800deg);
+        left: 600px;
+        top: 500px;
+        opacity: 50%;
+    }
+    100% {
+        background-color: #000080;
+        color: #fc9a9a;
+        transform: rotate(0deg);
+        left: calc(50% - 111px); /* 273px; */ /* ----- Desplaçament ----- */
+        top: 224px;
+        opacity: 100%;
+    }
+}
+@keyframes Ani-C {
+    0%   {
+        background-color: #ff9a52;
+        color: #283583;
+        left: 0px;
+        top: 0px;
+        opacity: 1%;
+    }
+    20%  {
+        background-color: #510080;
+        color: #ffff00;
+        transform: rotate(1800deg);
+        left: 800px;
+        top: 200px;
+        opacity: 20%;
+    }
+    50%  {
+        background-color: #510080;
+        color: #ffff00;
+        transform: rotate(-900deg);
+        left: 500px;
+        top: 100px;
+        opacity: 50%;
+    }
+    100% {
+        background-color: #ff0000;
+        color: #93fbff;
+        transform: rotate(0deg);
+        left: calc(50% - 37px);  /*346px;*/ /* ----- Desplaçament ----- */
+        top: 148px;
+        opacity: 100%;
+    }
+}
+@keyframes Ani-A {
+    0% {
+        background-color: #fc14fc;
+        color: #fbff0c;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        transform: rotate(0deg);
+        opacity: 1%;
+    }
+    25% {
+        background-color: #2bfdec;
+        color: #ff7b00;
+        left: 250px; /* ----- Desplaçament ----- */
+        top: 250px;
+        transform: rotate(90deg);
+        opacity: 25%;
+    }
+    80% {
+        background-color: #ffa600;
+        color: #0e0183;
+        left: 250px; /* ----- Desplaçament ----- */
+        top: 250px;
+        transform: rotate(270deg);
+        opacity: 80%;
+    }
+    100% {
+        background-color: #000080;
+        color: #fc9a9a;
+        transform: rotate(360deg);
+        left: calc(50% + 37px);/* 419px; */ /* ----- Desplaçament ----- */
+        top: 72px;
+        opacity: 100%;
+    }
+}
+@keyframes Ani-R {
+    0% {
+        background-color: #fc14fc;
+        color: #fbff0c;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        transform: rotate(0deg);
+        opacity: 1%;
+    }
+    25% {
+        background-color: #ffa600;
+        color: #0e0183;
+        left: 100px; /* ----- Desplaçament ----- */
+        top: -50px;
+        transform: rotate(90deg);
+        opacity: 25%;
+    }
+    80% {
+        background-color: #2bfdec;
+        color: #ff7b00;
+        left: 250px; /* ----- Desplaçament ----- */
+        top: 250px;
+        transform: rotate(-270deg);
+        opacity: 80%;
+    }
+    100% {
+        background-color: #ff0000;
+        color: #93fbff;
+        transform: rotate(360deg);
+        left: calc(50% + 111px);/* 492px; */ /* ----- Desplaçament ----- */
+        top: -4px;
+        opacity: 100%;
+    }
+}
+.animacio1{
+    animation-name: Ani-O;
+    animation-duration: 13s;
+    animation-delay: 1s;
+}
+.animacio2{
+    animation-name: Ani-S;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+.animacio3{
+    animation-name: Ani-C;
+    animation-duration: 9s;
+    animation-delay: 3s;
+}
+.animacio4{
+    animation-name: Ani-A;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+.animacio5{
+    animation-name: Ani-R;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.animacio1, .animacio2, .animacio3, .animacio4, .animacio5, .animacioGenerica{
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes Ani-Generic {
+    0% {
+        color: #000000;
+        font-size: 2rem;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    50% {
+        color: #2bfdec;
+        font-size: 3rem;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        /* transform: rotate(180deg); */
+    }
+    100% {
+        color: #000000;
+        font-size: 2rem;
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        /* transform: rotate(360deg); */
+    }
+}
+.frase{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
+.animacioGenerica{
+    animation-name: Ani-Generic;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+.letra-C, .letra-U, .letra-R, .letra-S, .letra-D, .letra-APOS, .letra-A, .letra-N, .letra-I, .letra-M, .letra-A2, .letra-C2, .letra-I2, .letra-O{
+    animation-name: Ani-Generic;
+    animation-duration: 3s;
+}
+.letra-C{animation-delay: 1s;}
+.letra-U{animation-delay: 1.25s;}
+.letra-R{animation-delay: 1.5s;}
+.letra-S{animation-delay: 1.75s;}
+.letra-D{animation-delay: 2s;}
+.letra-APOS{animation-delay: 2.25s;}
+.letra-A{animation-delay: 2.5s;}
+.letra-N{animation-delay: 2.75s;}
+.letra-I{animation-delay: 3s;}
+.letra-M{animation-delay: 3.25s;}
+.letra-A2{animation-delay: 3.5s;}
+.letra-C2{animation-delay: 3.75s;}
+.letra-I2{animation-delay: 4s;}
+.letra-O{animation-delay: 4.25s;}

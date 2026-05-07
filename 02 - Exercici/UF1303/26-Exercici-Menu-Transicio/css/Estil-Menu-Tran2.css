@@ -1,0 +1,77 @@
+*{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* etiquetes globlas */
+header, footer{
+    z-index: 99;
+    position: fixed;
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* etiquetes individuals */
+header{
+    font-size: 1.5rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+nav{
+    position: relative;
+    width: 10rem;
+    height: 100%;
+    top: 4rem;
+    bottom: 1rem;
+    background-color: #ffe4c4;
+}
+main{
+    position: relative;
+    top: 4rem;
+    bottom: 1rem;
+    left: 10rem;
+    width: calc(100% - 10rem);
+    background-color: aquamarine;
+}
+
+li{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    gap: 1rem, 1rem;
+}
+
+
+/* ---------- clases ---------- */
+.navegador{
+}
+.boton{
+    border: 1px solid #000000;
+    width: 7rem;
+    height: 1.25rem;
+    border-radius: 10rem;
+}
+.menu{
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+}
+.submenu{
+    position: relative;
+    left: 0;
+    transform:translate(6rem, 0);
+}
+
