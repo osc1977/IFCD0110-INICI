@@ -1,0 +1,67 @@
+*{
+    font-size: 1rem;
+    margin: 0;
+}
+/* etiquetes globlas */
+header, footer{
+    background-color: #283583;
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+
+/* etiquetes individuals */
+header{
+    top: 0;
+    font-size: 2.75rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 0.6rem;
+    height: 1rem;
+}
+main{
+    background-color: #ffe4c4;
+    top: 4rem;
+    bottom: 1rem;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 5rem);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+/* ---------- tipos de clases ---------- */
+.targeta{
+    border: 1px solid #283583;
+    width: 200px;
+    height: 400px;
+    margin: 20px;
+}
+.titul{
+    font-size: 1.5rem;
+    background-color: #ff8c00;
+    text-align: center;
+    align-content: center;
+    height: 2rem;
+}
+.contingut{
+    background-color: aquamarine;
+    height: calc(100% - 3rem);
+    padding: 0.5rem;
+}
+
+.vis{overflow: visible;}
+.hid{overflow: hidden;}
+.scr{overflow: scroll;}
+.aut{overflow: auto;}
+/* si vols posar nomes un scroll,aquets 2 son per poder posar el scroll hor o ver */
+/* overflow-y: hidden;
+overflow-x: scroll; */
