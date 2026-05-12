@@ -8,6 +8,8 @@
         <!-- Esto sirve llamar los estilos de un documento css, el un icono en la pestaña de la página-->
         <link rel="stylesheet" href="./css/estils-cv.css" />
         <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+        /* ICONOS */
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
 
@@ -25,25 +27,25 @@
                     <img class="foto" src="./img/avatar-g.jpg" alt="Oscar">
                 </figure>
     
-                <div class="contacte">
+                <div class="contacte contenidor">
                     <div class="titul">
                         CONTACTE
                     </div>
                     <div class="dades">
                         <address>
-                            <span class="ladillo">@</span><br>
+                            <i class="fa-solid fa-at icone"></i><br>
                             ojmgrafic@example.com
                             <hr class="linea">
-                            <span class="ladillo">Tel.</span><br>
+                            <i class="fa-solid fa-phone icone"></i><br>
                             000 00 00 00
                             <hr class="linea">
-                            <span class="ladillo">Direcció</span><br>
+                            <i class="fa-solid fa-map-location-dot icone"></i><br>
                             C/Amalia Soler, 5
                         </address>
                     </div>
                 </div>
     
-                <div class="habilitats">
+                <div class="habilitats contenidor">
                     <div class="titul">
                         HABILITATS
                     </div>
@@ -69,16 +71,34 @@
                     </ul>
                 </div>
                 
-                <div class="idiomes">
+                <div class="coneixement contenidor">
+                    <div class="titul">
+                        CONEIXEMENTS
+                    </div>
+                    <ul>
+                        <li>
+                            Programas d'edició (Adobe Creative, Quark, ...)
+                        </li>
+                        <li>
+                            Programació de webs (html, lenguaje C, Cobol, Pascal, Visual Basic, ...)
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="idiomes contenidor">
                     <div class="titul">
                         IDIOMES
                     </div>
                     <div class="caixa">
-                        Castella
-                        Catala
+                        Castella <br>
+                        Catala <br>
                         Angles
                     </div>
                 </div>
+                <br>
+
+
             </div>
         </nav>
         
@@ -166,10 +186,6 @@
 
         </main>
 
-        <!-- Esta etiqueta sirve para poner los elementos de publicidad, banners, ... -->
-        <aside>
-        </aside>
- 
         <!-- Esta etiqueta sirve para poner los elementos al final de la pàgina, ... -->
         <footer>
             ©(2026) Desenvolupado por Oscar. Todos los derechos reservados.

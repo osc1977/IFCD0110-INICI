@@ -1,0 +1,74 @@
+:root{
+    /* --primary-bg-color: #1e90ff; */
+    /* --primary-color: #ffffff;} */
+    --col-princ-icones: red;
+    --col-ombre-icones: green;
+    --col-titul: #283583;
+}
+html{
+    font-size: 62.5%; /* Equival a 10px */
+}
+*{
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* etiquetes globlas */
+header, footer{
+    background-color: var(--col-titul);
+    color: #ffe4c4;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+}
+
+/* etiquetes individuals */
+header{
+    top: 0;
+    font-size: 3rem;
+    height: 4rem;
+}
+footer{
+    bottom: 0;
+    font-size: 1rem;
+    height: 2rem;
+}
+.contenidor{
+    display: flex;
+    margin-top: 4rem;
+    height: calc(100vh - 6rem);
+}
+nav{
+    background-color: aquamarine;
+    width: 18rem;
+}
+main{
+    background-color: #ffe4c4;
+    width: calc(100% - 43rem);
+}
+aside{
+    background-color: aquamarine;
+    width: 25rem;
+}
+ul{
+    list-style-type: none;
+    padding: 2rem;
+}
+i{
+    padding: 1.5rem 1rem;
+    color: var(--col-princ-icones);
+    text-shadow: 2px 2px 5px var(--col-ombre-icones);
+}
+li:hover{
+    background-color: #ffea2f;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    transform: scale(1.2);
+}
+li:hover > i{
+    transform: rotate(360deg);
+    transition: all 0.6s ease;
+    opacity: 0.9;
+    color: blue;
+}

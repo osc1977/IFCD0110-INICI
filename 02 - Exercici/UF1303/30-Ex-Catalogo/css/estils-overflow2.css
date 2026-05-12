@@ -75,6 +75,7 @@ li{
     background-color: #feffc4;
     padding: 1rem;
     margin: 1rem 1rem 0rem;
+    overflow: hidden;
 }
 .titul{
     text-align: center;
@@ -93,7 +94,6 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     /* height: 4.25rem; */
-    overflow: hidden;
 }
 .cont-ADALT{
     display: flex;
@@ -115,13 +115,11 @@ li{
         top: 0;
         width: 11rem;
         height: 1rem;
-        overflow: hidden;
     }
     to {
         top: 0;
         width: 11rem;
         /* height: auto; */
         height: 32.5rem;
-        overflow: visible;
     }
 }
