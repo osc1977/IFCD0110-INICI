@@ -1,0 +1,139 @@
+:root{
+    /* --primary-bg-color: #1e90ff; */
+    /* --primary-color: #ffffff;} */
+    --col-princ-icones: red;
+    --col-ombre-icones: green;
+    --col-titul: #283583;
+}
+html{
+    font-size: 62.5%; /* Equival a 10px */
+}
+*{
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* etiquetes globlas */
+header, footer{
+    background-color: var(--col-titul);
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+}
+
+/* ----- ETIQUETES PRINCIPALS ---------- */
+.contingut{
+    display: grid;
+    grid-template-areas:
+        "capcalera"
+        "llista"
+        "principal"
+        "banners"
+        "peu";
+    /* gap: 10px;   */
+}
+.capcalera{
+    /* grid-area: capcalera; */
+}
+.llista{
+    /* grid-area: llista; */
+    background-color: #c8ecfa;
+}
+.principal{
+    /* grid-area: principal; */
+    background-color: #f4f8d1;
+}
+.banners{
+    /* grid-area: banners; */
+    background-color: #a1ffb9;
+}
+.peu{
+    /* grid-area: peu; */
+}
+
+/* ----- ETIQUETES RESPONSIVE ---------- */
+/* @media (600px <= width <= 1024px) {
+    capcalera {grid-area: 1 / span 6;}
+    menu {grid-area: 2 / span 1;}
+    principal {grid-area: 2 / span 4;}
+    banners {grid-area: 3 / span 6;}
+    peu {grid-area: 4 / span 6;}
+} */
+@media (min-width: 350px) {
+    header {
+        grid-area: 1 / span 1;
+        background-color: #5913fd;
+        }
+    nav {grid-area: 2 / span 1;
+        ul{display:flex}
+        flex-direction: row;
+
+    }
+    main {grid-area: 3 / span 1;}
+    aside {grid-area: 4 / span 1;}
+    footer {
+        grid-area: 5 / span 1;
+        background-color: #5913fd;}
+}
+@media (min-width: 700px) {
+    header {
+        grid-area: 1 / span 3;
+        background-color: #026b19;
+        }
+    nav {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        ul{display:block}
+
+    }
+    main {grid-area: 2 / span 2;}
+    aside {grid-area: 3 / span 2;}
+    footer {
+        grid-area: 4 / span 3;
+        background-color: #026b19;}
+}
+@media (min-width: 1024px) {
+    header {
+        grid-area: 1 / span 6;
+        background-color: #283583;}
+    nav {grid-area: 2 / span 1;}
+    main {grid-area: 2 / span 4;}
+    aside {grid-area: 2 / span 1;}
+    footer {
+        grid-area: 3 / span 6;
+        background-color: #283583;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----- LLISTA MENU ---------- */
+ul{
+    list-style-type: none;
+    padding: 2rem;
+}
+i{
+    padding: 1.5rem 1rem;
+    color: var(--col-princ-icones);
+    text-shadow: 2px 2px 5px var(--col-ombre-icones);
+}
+li:hover{
+    background-color: #ffea2f;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    transform: scale(1.2);
+}
+li:hover > i{
+    transform: rotate(360deg);
+    transition: all 0.6s ease;
+    opacity: 0.9;
+    color: blue;
+}
