@@ -1,0 +1,289 @@
+:root{
+    /* --primary-bg-color: #1e90ff; */
+    /* --primary-color: #ffffff;} */
+    --col-princ-icones: red;
+    --col-ombre-icones: green;
+    --col-titul: #283583;
+}
+html{
+    font-size: 62.5%; /* Equival a 10px */
+}
+*{
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* etiquetes globlas */
+header, footer{
+    background-color: var(--col-titul);
+    color: #ffe4c4;
+    text-align: center;
+    align-content: center;
+}
+
+/* ----- ETIQUETES PRINCIPALS ---------- */
+.contingut{
+    display: grid;
+    grid-template-areas:
+        "capcalera"
+        "llista"
+        "principal"
+        "banners"
+        "peu";
+    /* gap: 10px;   */
+}
+.capcalera{
+    /* grid-area: capcalera; */
+}
+.llista{
+    /* grid-area: llista; */
+    background-color: #c8ecfa;
+}
+.principal{
+    /* grid-area: principal; */
+    background-color: #f4f8d1;
+}
+.banners{
+    /* grid-area: banners; */
+    background-color: #a1ffb9;
+}
+.peu{
+    /* grid-area: peu; */
+}
+.principal, .banners{
+    padding: 10px;
+}
+/* ====================================== ========================================= 
+IMATGES DE BANNERS
+========================================= ====================================== */
+.img-ban{
+    width: 200px;
+    gap: 5px;
+    height: 300px; /* si le pones "auto en lugar de 300px" no se deformara */
+    container-name: myBanners;
+    container-type: inline-size;
+}
+
+.img-prin{
+    width: 200px;
+    height: auto;
+    float: left;                /* força la imatge a la dreta */
+    padding-right: 18px;        /* dona un marge al costat*/
+    }
+
+/* ====================================== ========================================= 
+PSEUDOELEMENTS
+========================================= ====================================== */
+.pri-par::first-letter{
+    font-size: 6rem;}
+.pri-sec::before{
+    content: "Llegeix això:";
+    background-color: #026b19;
+    color: #ffea2f;
+    font-size: small;
+    padding: 4px;
+}
+.pri-ter::after{
+    content: "< mira't aixó:";
+    background-color: #026b19;
+    color: #ffea2f;
+    font-size: small;
+    padding: 4px;
+}
+
+/* ====================================== ========================================= 
+ICONO FIXE PER ASISTENCIA, ....
+========================================= ====================================== */
+.asistencia{
+    /* visibility: hidden; */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 25px;
+    right: 25px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    background-color: #ff009d;
+}
+.neutro{
+    color: #ffea2f;
+    text-shadow: 0px 0px 0px #c8ecfa;
+    margin: 0;
+    padding: 0;
+}
+.ico-ASIS{
+    visibility: hidden;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 150px;
+    height: 225px;
+    background-color: #c8ecfa;
+    border: 1px solid #000000;
+    text-align: center;
+    align-content: center;
+    gap: 10px;
+}
+.asistencia:hover > .ico-ASIS{
+    cursor: pointer;
+    visibility: visible;
+}
+
+
+/* ====================================== ========================================= 
+PSEUDOELEMENT
+DA COLOR ALS PUNTS DELS LLISTATS
+========================================= ====================================== */
+
+::marker{
+    font-family: ;
+    color: #ff009d;
+}
+/* ====================================== ========================================= 
+PSEUDOELEMENT
+subratlla el text de la web
+========================================= ====================================== */
+
+::selection{
+    color: #ff009d;
+    background-color: #ffea2f50;
+}
+
+/* ::backdrop{background-color: #5913fd;} */
+
+
+
+/* ====================================== ========================================= 
+ETIQUETES RESPONSIVE
+========================================= ====================================== */
+@media (max-width: 350px) {
+    .asistencia{
+    visibility: visible;
+    }
+    .contingut{
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        /* grid-area: 1 / span 1; */
+        background-color: #fd1313;
+    }
+    /* ul > li > span {display: none;} */
+    nav {
+        visibility: hidden;
+        position: absolute;
+        /* grid-area: 2 / span 1; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* ul{display:flex} */
+    }
+    main {
+        /* grid-area: 3 / span 1; */
+    }
+    aside {
+        /* grid-area: 4 / span 1; */
+    }
+    footer {
+        /* grid-area: 5 / span 1; */
+        background-color: #fd1313;}
+    .img-ban{
+        width: 20px;
+        height: 30px;}
+}
+@media (min-width: 350px) {
+    header {
+        grid-area: 1 / span 1;
+        background-color: #5913fd;
+    }
+    ul > li > span {display: none;}
+    nav {
+        /* visibility: hidden; */
+        grid-area: 2 / span 1;
+        display: flex;
+        justify-content: center;
+        ul{display:flex}
+    }
+    main {grid-area: 3 / span 1;}
+    aside {grid-area: 4 / span 1;}
+    footer {
+        grid-area: 5 / span 1;
+        background-color: #5913fd;}
+    .img-ban{
+        width: 50px;
+        height: 75px;}
+}
+
+@media (min-width: 700px) {
+        header {
+        grid-area: 1 / span 3;
+        background-color: #026b19;  }
+    nav {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        ul{display:block}
+    }
+    main {grid-area: 2 / span 2;}
+    aside {grid-area: 3 / span 2;}
+    footer {
+        grid-area: 4 / span 3;
+        background-color: #026b19;
+    }
+    .img-ban{
+        width: 100px;
+        height: 150px;}
+}
+
+@media (min-width: 1024px) {
+    header {
+        grid-area: 1 / span 6;
+        background-color: #283583;
+    }
+    ul > li > span {display: inline-block;}
+    nav {grid-area: 2 / span 1;}
+    main {grid-area: 2 / span 4;}
+    aside {grid-area: 2 / span 1;}
+    footer {
+        grid-area: 3 / span 6;
+        background-color: #283583;}
+    .img-ban{
+        width: 200px;
+        height: 300px;}
+}
+
+/* @media (600px <= width <= 1024px) {
+    capcalera {grid-area: 1 / span 6;}
+    menu {grid-area: 2 / span 1;}
+    principal {grid-area: 2 / span 4;}
+    banners {grid-area: 3 / span 6;}
+    peu {grid-area: 4 / span 6;}
+} */
+
+
+
+/* ====================================== ========================================= 
+LLISTA MENU 
+========================================= ====================================== */
+nav ul{
+    list-style-type: none;
+    padding: 1.5rem;
+}
+i{
+    padding: 1.5rem 1rem;
+    color: var(--col-princ-icones);
+    text-shadow: 2px 2px 5px var(--col-ombre-icones);
+}
+nav li:hover{
+    background-color: #ffea2f;
+    cursor: pointer;
+    transition: all 0.6s ease;
+    transform: scale(1.2);
+}
+nav li:hover > i{
+    transform: rotate(360deg);
+    transition: all 0.6s ease;
+    opacity: 0.9;
+    color: blue;
+}
