@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudoclasses</title>
+
+        <!-- ================================================== 
+        Esto sirve llamar los estilos de un documento css, el un icono en la pestaña de la página
+        ==================================================  -->
+        <link rel="stylesheet" href="./css/estils-Pseudoclases.css" />
+        <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+
+        <!-- ================================================== 
+        ICONES (es treuen de https://fontawesome.com/search?ic=free-collection )
+        ==================================================  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            /* Aqui van los estilos, tambien se pueden poner en un documento css, es preferible */
+        </style>
+    </head>
+
+    <!-- Siempre hay que terminar las etiqeutas con: <xx>...</xx> y si solo llevan una se le pone al final: <xx yyyyy /> -->   
+
+    <body>
+        <!-- Esta etiqueta sirve para poner los elementos al comenzar de la pàgina, ... -->
+        <header>
+            Exercicis 
+        </header>
+
+        <!-- CONTINGUT DE FITXES AMB PSEUDOCLASSES, ... -->
+        <main>
+
+            <div class="fitxa">
+                <div class="titol">
+                    <i class="fa-solid fa-at"></i>Interactive Pseudo-classes
+                    
+                </div>
+                <div class="exemple">
+                    <a href="https://www.lorem.cat/" target="_blank">:link</a> fons taronja<br>
+                    <a href="https://www.w3schools.com/" target="_blank">:visited</a> fons verd<br>
+                    <a href="https://fontawesome.com/start" target="_blank">:hover</a> fons groc<br>
+                    <a href="https://campus.cetpenedes.cat/my/" target="_blank">:active</a> fons blau<br>
+                </div>
+                <div class="descripcio">
+                    :link :active :visited :hover. 
+                </div>
+            </div>
+            
+            <div class="fitxa">
+                <div class="titol">
+                    First-child and Last-child
+                </div>
+                <div class="exemple primeridarrerchild">
+                    <p>Primer paragraf</p>
+                    <p>Segon paragraf</p>
+                    <p>Tercer paragraf</p>
+                    <p>Quart paragraf</p>
+                </div>
+                <div class="descripcio">
+                    first-child / last-child. 
+                </div>
+            </div>
+
+            <div class="fitxa">
+                <div class="titol">
+                    nth-child
+                </div>
+                <div class="exemple nChild">
+                    <div>Primer Div</div>
+                    <p>Primer paragraf</p>
+                    <p>Segon paragraf</p>
+                    <div>segon div</div>
+                    <div>tercer div</div>
+                </div>
+                <div class="descripcio">
+                    nth-Child. 
+                </div>
+            </div>
+
+            <div class="fitxa">
+                <div class="titol">
+                    nType
+                </div>
+                <div class="exemple nType">
+                    <div>Primer Div</div>
+                    <p>Primer paragraf</p>
+                    <p>Segon paragraf</p>
+                    <div>segon div</div>
+                    <div>tercer div</div>
+                </div>
+                <div class="descripcio">
+                    firts-of-type and las-of-type. 
+                </div>
+            </div>
+
+            <div class="fitxa">
+                <div class="titol">
+                    Nomes fill
+                </div>
+                <div class="exemple solo">
+                    <ul>
+                        <li>llista 1 primer</li>
+                        <li>llista 1 segon</li>
+                    </ul>
+                    <ul>
+                        <li>llista 2 unic</li>
+                    </ul>
+                    <ul>
+                        <li>lista 3 primer</li>
+                        <li>lista 3 segon</li>
+                        <li>lista 3 tercer</li>
+                    </ul>
+                    <ul>
+                        <li>lista 4 unic</li>
+                    </ul>
+                </div>
+                <div class="descripcio">
+                    only-child. 
+                </div>
+            </div>
+
+            <div class="fitxa">
+                <div class="titol">
+                    <i class="fa-solid fa-fingerprint"></i>Només de tipos
+                </div>
+                <div class="exemple onlyOfType">
+                    <div>Primer Div</div>
+                    <p>Primer paragraf</p>
+                    <p>Segon paragraf</p>
+                    <b>Segon paragraf</b>
+                    <div>segon div</div>
+                    <div>tercer div</div>
+                </div>
+                <div class="descripcio">
+                    Only of type. 
+                </div>
+            </div>
+            
+            <div class="fitxa">
+                <div class="titol">
+                    <i class="fa-regular fa-calendar-xmark"></i>Vacio
+                </div>
+                <div class="exemple buit">
+                    <div class="casella">A</div>
+                    <div class="casella">B</div>
+                    <div class="casella"></div>
+                    <div class="casella">D</div>
+                </div>
+                <div class="descripcio">
+                    Empty. 
+                </div>
+            </div>
+
+            <div class="fitxa">
+                <div class="titol">
+                    Titol
+                </div>
+                <div class="exemple">
+                    <p lang="it">Italià</p>
+                    <p lang="ca">Català</p>
+                    <p lang="ca">Català</p>
+                    <p lang="es">Espanyol</p>
+                    <p lang="it">Italià</p>
+                </div>
+                <div class="descripcio">
+                    Descripcio. 
+                </div>
+            </div>
+            
+            <div class="fitxa">
+                <div class="titol">
+                    Titol
+                </div>
+                <div class="exemple">
+                    Exemple
+                </div>
+                <div class="descripcio">
+                    Descripcio. 
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Esta etiqueta sirve para poner los elementos de publicidad, banners, ... -->
+        <aside>
+        </aside>
+ 
+        <!-- Esta etiqueta sirve para poner los elementos al final de la pàgina, ... -->
+        <footer>
+            ©(2026) Desenvolupado por Oscar. Todos los derechos reservados.
+        </footer>
+    </body>
+</html>
