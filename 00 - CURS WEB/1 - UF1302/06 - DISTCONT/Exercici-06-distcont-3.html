@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Distribucio contingut</title>
+        <meta charset="utf-8">
+        <style>
+          /* ---------- clases d'estils ---------- */
+            .contenidor{
+                display: grid;
+                grid-template-areas:
+                    "header header header"
+                    "menu2 main aside"
+                    "footer footer footer ";
+                    
+                /* aixo determina quines proporcions ocupan les files i columnes  */
+                    grid-template-columns: 120px 1fr 150px;
+                    grid-template-rows: 40px 1fr 15px;
+                    height: 800px;
+            }
+            
+          /* ---------- clases d'etiquetes ---------- */
+            header{
+                grid-column: 1/4;
+                grid-row: 1/2;
+                background-color: lightsteelblue;
+                text-align: center;
+                font-size: 30px;
+                align-content: center;
+            }
+            nav{
+                grid-column: 1/2;
+                grid-row: 2/3;
+                background-color: rgb(243, 122, 122);
+                text-align: center;
+            }
+            main{
+                grid-column: 2/3;
+                grid-row: 2/3;
+                background-color: rgb(112, 158, 226);
+            }
+            aside{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                background-color: rgb(112, 226, 141);
+                text-align: center;
+            }
+            footer{
+                grid-column: 1/4;
+                grid-row: 3/4;
+                background-color: lightsteelblue;
+                font-size: 10px;
+                text-align: center;
+                align-content: center;
+            }
+            </style>
+    </head>
+
+
+    <body class="contenidor">
+        <header>
+            <b>Distribució de grid amb atributs resumits</b>
+        </header>
+
+        <nav>
+            <b>Menu</b>
+        </nav>
+
+        <main>
+            <div style="text-align: center;">
+                <b>Contingut prinpicpal</b>
+            </div>
+        </main>
+
+        <aside>
+            <b>Bunners + Ads</b>
+        </aside>
+        
+        <footer>
+            <b>Desenvolupat per Osc1977</b>
+        </footer>
+
+        
+    </body>
+</html>

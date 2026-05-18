@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Distribucio contingut</title>
+        <meta charset="utf-8">
+        <!--     ---------- stils anidats a un documente css ----------     -->
+        <link rel="stylesheet"  href="./css/colors.css"/>
+
+        <style>
+          /* ---------- estil de reticula GRID ---------- */
+          .contenidor{
+              display: grid;
+              grid-template-areas:
+              "header header header"
+              "menu2 main aside"
+              "footer footer footer ";
+              
+              /* aixo determina quines proporcions ocupan les files i columnes  */
+              grid-template-columns: 100px 1fr 100px;
+              grid-template-rows: 40px 1fr 15px;
+              height: 800px;
+            }
+            
+            /* ---------- clases d'etiquetes ---------- */
+            header{
+                grid-area: header;
+                /* background-color: lightsteelblue; */
+                text-align: center;
+                font-size: 30px;
+                align-content: center;
+                border-bottom: 2px solid black;
+            }
+            nav{
+                grid-area: menu2;
+                /* background-color: rgb(243, 122, 122);
+                text-align: center; */
+            }
+            main{
+                grid-area: main;
+                background-color: rgb(112, 158, 226);
+                padding: 10px;
+                padding-top: 10px;
+            }
+            aside{
+                grid-area: aside;
+                /* background-color: rgb(112, 226, 141);
+                text-align: center; */
+            }
+            footer{
+                grid-area: footer;
+                /* background-color: lightsteelblue; */
+                font-size: 10px;
+                text-align: center;
+                align-content: center;
+            }
+
+            /* ---------- estil de reticula GRID ---------- */
+            .article{
+                height: 150px;
+                width: 250px;
+                border: 2px solid black;
+                margin: 4px;
+                padding: 4px;
+                text-align: left;                
+            }
+            .ord{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .imatge{
+                align-content: center;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            </style>
+    </head>
+    
+    <body class="contenidor">
+        <header>
+            <b>Distribució de grid assignant noms a àrees</b>
+        </header>
+        
+        <nav></nav>
+        
+        <main>
+            
+            <div style="text-align: center; padding-bottom: 25px;">
+                <b>Menu principal</b>
+            </div>
+    
+            <!-- Primera pàgina web -->
+                <div class="ord"">
+                    <!-- Primera pàgina web -->
+                    <div style="text-align: center;">
+                        Utilizant <br>
+                        caixes semàntiques
+                        <a href="./Exercici-06-distcont-1.html" target="_blank">
+                            <div class="article" style="background-color: lightblue; text-align: center;">
+                                <img src="./img/bot01.png" class="imatge" alt="Boton 1">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Segona pàgina web -->
+                    <div style="text-align: center;">
+                        Utilitzant <br>
+                        caixes divs
+                       <a href="./Exercici-06-distcont-2.html" target="_blank">
+                            <div class="article" style="background-color: lightblue; text-align: center;">
+                                <img src="./img/bot02.png" class="imatge" alt="Boton 2">
+                            </div>
+                       </a>
+                    </div>
+                    
+                    <!-- Tercera pàgina web -->
+                    <div style="text-align: center;">
+                        Distribució de grid <br>
+                        amb atributs resumits
+                        <a href="./Exercici-06-distcont-3.html" target="_blank">
+                            <div class="article" style="background-color: lightblue; text-align: center;">
+                                <img src="./img/bot03.png" class="imatge" alt="Boton 3">
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Cuarta pàgina web -->
+                    <div style="text-align: center;">
+                        Distribució de grid <br>
+                        assignant noms a àrees
+                        <a href="./Exercici-06-distcont-4.html" target="_blank">
+                            <div class="article" style="background-color: lightblue; text-align: center;">
+                                <img src="./img/bot04.png" class="imatge" alt="Boton 4">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </main>
+
+        <aside></aside>
+        
+        <footer>
+            <b>Desenvolupat per Osc1977</b>
+        </footer>
+
+        
+    </body>
+</html>
