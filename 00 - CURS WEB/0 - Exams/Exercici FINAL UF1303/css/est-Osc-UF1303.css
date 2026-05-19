@@ -1,0 +1,226 @@
+/* <!-- ===============================================================
+ FUENTE IMPORTADA  (Para elegir fuentes determinadas)    =============================================================== --> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+.roboto-font{            
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+@font-face {
+        font-family: penny;
+        src: url("./ttf/HennyPenny-Regular.ttf");
+    }
+.fontpenny{
+    font-family: "penny",Arial, Helvetica, sans-serif;
+}
+
+
+/* <!-- ===============================================================
+AFECTA A TODOS LOS ELEMENTOS
+=============================================================== --> */
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    /* background-color: #7fffd47e; */
+    z-index: 1;
+    font-family: Roboto, Arial, Helvetica, sans-serif
+}
+
+
+/* <!-- ===============================================================
+PROPIEDADES COMUNES
+=============================================================== --> */
+header, footer{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 0rem;
+    z-index: 99;
+    position: fixed;
+}
+
+
+/* <!-- ===============================================================
+EN HEADER
+=============================================================== --> */
+header{
+    background-color: #283583;
+    color: #ffe4c4;
+    top: 0;
+    font-size: 1.5rem;
+    height: 11rem;
+    position: fixed;
+}
+/* <!-- ===============================================================
+BOTONES DEL NAV EN HEADER
+=============================================================== --> */
+nav > ul{
+    list-style-type: none;
+    padding-inline: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+nav > ul > li{
+    width: 13rem;
+    background-color: #ffe4c4;
+    margin: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+nav > ul > li:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: all 0.6s ease;
+    opacity: 0.9;
+    color: blue;
+}
+
+
+/* <!-- ===============================================================
+EN BODY
+=============================================================== --> */
+body{
+    background-color: rgba(186, 255, 232, 0.494);
+}
+
+/* <!-- ===============================================================
+EN ASIDE
+=============================================================== --> */
+aside{
+    position: fixed;
+    background-color: #f0dddd;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 32.5rem;
+    top: 11rem;
+    right: 0;
+    bottom: 8rem;
+    padding: 1rem;
+    text-align: center;
+}
+aside > ul{
+    list-style-type: none;
+    padding-inline: 0;
+    flex-direction: column;
+    top: 12rem;
+    width: 100%;
+    margin-bottom: 9rem;
+}
+aside > ul > li {
+    margin: 1rem;
+    width: 16rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+aside > ul > li:hover{
+    cursor: pointer;
+    transform: translate(-2rem);
+    transition: all 0.6s ease;
+    opacity: 0.9;
+    background-color: aqua;
+    border-radius: 1rem;
+    color: blue;
+}
+    
+ 
+/* <!-- ===============================================================
+PARA LA TABLA
+=============================================================== --> */
+.tr, td{
+    width: 50%;
+    border: 1px solid #000000;
+}
+
+
+/* <!-- ===============================================================
+EN SECTION y ARTICLE
+=============================================================== --> */
+h1{
+    font-size: 3.   rem;
+}
+h2{
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section{
+    position: absolute;
+    top: 11rem;
+    padding: 1rem;
+    right: 24rem;
+}
+p{
+    font-size: 1.5rem;
+    text-indent: 25px;
+}
+article > p:first-child{
+    padding-left: 3rem;
+}
+
+
+/* <!-- ===============================================================
+EN LA IMAGEN
+=============================================================== --> */
+.foto{
+    float: left;             /* força la imatge a la dreta */
+    padding-right: 2rem;     /* dona un marge al costat*/
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+@keyframes AniColor {
+    0% {
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        transform: rotate(0deg) scale(1);
+        visibility: visible;
+    }
+    50% {
+        left: 50px; /* ----- Desplaçament ----- */
+        top: 50px;
+        transform: rotate(180deg) scale(1.8);
+        visibility: hidden;
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        left: 0px; /* ----- Desplaçament ----- */
+        top: 0px;
+        visibility: visible;
+    }
+}
+.animacio1{
+    animation-name: AniColor;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+
+/* <!-- ===============================================================
+EN FOOTER
+=============================================================== --> */
+footer{
+    background-color: #283583;
+    color: #ffe4c4;
+    bottom: 0;
+    font-size: 0.5rem;
+    height: 9rem;
+}
+footer > ul{
+    list-style-type: none;
+    padding-inline: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}

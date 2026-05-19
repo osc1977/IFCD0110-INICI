@@ -1,0 +1,23 @@
+@media screen {
+    *{
+    }  
+    .amagat{
+        display: block;
+    }
+    div{
+    }
+    .classe{
+    }
+    a[target]{
+    }
+    #idmain{
+    }
+    div:hover{
+    }
+    article::first-letter{
+    }
+    td:nth-child(odd){
+    }
+    p:first-child{
+    }
+}
