@@ -40,10 +40,11 @@ article{
 @media print and (max-width: 500px){
     body{
         background-color: #e2fdf4;
-        }
+    }
     .amagat{
         display: none;
-        }    
+    }
+}
         
 
 /* 

@@ -75,12 +75,55 @@ main{
     transform: rotateY(-67deg);
 }
 
-
-
-
 .rot3d:hover ~ .targeta .caixa{
     transform: rotateY(-67deg);
 }
 
 
+/* ----- TRANSFORM ------------------------------------------------------------ */
 
+.transXY:hover{
+    transform: translate(50px,50px);
+}
+.transY:hover{
+    transform: translateY(50px);
+}
+.transX:hover{
+    transform: translateX(50px);
+}
+.scaleXY:hover{
+    transform: scale(0.75,0.75)
+}
+.scaleY:hover{
+    transform: scaleY(0.75)
+}
+.scaleX:hover{
+    transform: scaleX(0.75)
+}
+.rotarANG:hover{
+    transform: rotate(25deg)
+}
+.rotar3D:hover{
+    transform: rotate3d(30,1,1,-45deg)
+}
+.rotarY:hover{
+    transform: rotateY(45deg)
+}
+.rotarZ:hover{
+    transform: rotateZ(45deg)
+}
+.skewXY:hover{
+    transform: skew(15deg,15deg)
+}
+.skewX:hover{
+    transform: skewX(45deg)
+}
+.skewY:hover{
+    transform: skewY(25deg)
+}
+.perspect:hover{
+    transform: perspective(100px)
+}
+.inherit:hover{
+    transform: inherit
+}
