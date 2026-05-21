@@ -12,9 +12,11 @@ ETIQUETAS UNIVERSALES
 :root{
     --col-tituls: #ffe4c4;
     --fons-tituls: #283583;
+    --col-menu: #ffffd2;
 }
 html{
     font-size: 62.5%; /* equival a 10px */
+    scroll-behavior: smooth;
 }
 
 /* <!-- ================================== 
@@ -40,44 +42,96 @@ header{
     grid-area: cap;
 }
 nav{
-    background-color: #ffffd2;
-    /* left: 0; */
+    background-color: var(--col-menu);
     grid-area: llista;
 }
 aside{
     background-color: #c9ffff;
-    /* right: 0; */
     grid-area: banner;
 }
-/* nav, aside{
-    width: 15%;
-} */
-/* nav, aside, main{
-    top: 4rem;
-    height: calc(100% - 6rem);
-    position: absolute;
-} */
+nav, aside{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
 main{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
     background-color: #ffbebe;
-    /* margin-left: 15%; */
-    /* margin-right: 15%; */
-    /* margin-bottom: 4rem; */
-    /* width: calc(100% - 30%); */
+    padding: 1rem;
     grid-area: contingut;
 }
 footer{
-    /* height: 2rem; */
-    /* bottom: 0; */
     grid-area: peu;
 }
+h2{
+    text-align: center;
+}
+
 
 /* <!-- ================================== 
 MENU del NAV
 ================================== --> */
+#navbar{
+    position: sticky;
+    top: 5rem;
+    /* overflow: hidden;     */
+}    
+#navbar a {
+  float: left;  
+  display: block;
+  /* color: #f2f2f2; */
+  /* text-align: center; */
+  /* padding: 14px; */
+  /* text-decoration: none; */
+}  
+
 ul{
     text-align: center;
+}    
+
+.menu{
+    position: sticky;
+    top: 5rem;
+}    
+.menu::before{
+    content: "Menu";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}    
+
+
+/* <!-- ================================== 
+FORMULARIS
+================================== --> */
+.registre, .perfil{
+    width: calc(100% - 2rem);
+    height: 80rem;
+    border: 1px solid var(--fons-tituls);
+    padding: 2rem;
+    margin: 2rem 1rem;
+}
+
+.separacio{
+    margin: 2rem 1rem;
+}
+.imatge{
+    height: 40rem;
+}
+.usuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+}
+.tabla{
+    display: flex;
+    width: 10rem;
+}
+th{
+    width: 10rem;
+}
+
+label{
+    /* display: inline-block */
 }
 
 /* <!-- ================================== 
@@ -100,8 +154,12 @@ figcaption{
 /* <!-- ================================== 
 DINTRE DE MAIN
 ================================== --> */
+section{
+    scroll-margin-top: 7.5rem;
+}
 article{
     padding: 2rem;
+    scroll-margin-top: 7.5rem;
 }
 article > figure{
     width: 20%;
