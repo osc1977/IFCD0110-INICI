@@ -42,10 +42,12 @@ header{
     grid-area: cap;
 }
 nav{
+    width: 100%;
     background-color: var(--col-menu);
     grid-area: llista;
 }
 aside{
+    width: 100%;
     background-color: #c9ffff;
     grid-area: banner;
 }
@@ -103,8 +105,8 @@ ul{
 FORMULARIS
 ================================== --> */
 .registre, .perfil{
-    width: calc(100% - 2rem);
-    height: 80rem;
+    /* width: calc(100% - 2rem);
+    height: 80rem; */
     border: 1px solid var(--fons-tituls);
     padding: 2rem;
     margin: 2rem 1rem;
@@ -114,7 +116,7 @@ FORMULARIS
     margin: 2rem 1rem;
 }
 .imatge{
-    height: 40rem;
+    width: 40%;
 }
 .usuario{
     display: flex;
@@ -124,15 +126,25 @@ FORMULARIS
 }
 .tabla{
     display: flex;
-    width: 10rem;
+    gap: 20rem 50rem;
 }
-th{
-    width: 10rem;
+.bot-inp, .bot-lab{
+    appearance: 0;
+    background-color: #fafd41b4;
+    border: 1px solid #283583;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+    width: 100%;
+    min-height: 30px;
+}
+.bot-lab{
+    text-align: right;
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    font-style: italic;
+    font-size: 1.3rem;
 }
 
-label{
-    /* display: inline-block */
-}
 
 /* <!-- ================================== 
 IMATGES en el ASIDE
@@ -151,6 +163,18 @@ figcaption{
 }
 
 
+/* <!-- ================================== 
+DINTRE DE MAIN
+================================== --> */
+.contenidor{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 4rem auto 2rem;
+    grid-template-areas: 
+    "cap cap cap"
+    "llista contingut banner"
+    "peu peu peu";
+}
 /* <!-- ================================== 
 DINTRE DE MAIN
 ================================== --> */
@@ -173,19 +197,6 @@ article:nth-child(even) > figure{
     margin-left: 2rem;  
 }
 
-
-/* <!-- ================================== 
-DINTRE DE MAIN
-================================== --> */
-.contenidor{
-    display: grid;
-    grid-template-columns: 15% auto 15%;
-    grid-template-rows: 4rem auto 2rem;
-    grid-template-areas: 
-    "cap cap cap"
-    "llista contingut banner"
-    "peu peu peu";
-}
 
 
 /* <!-- ================================== 

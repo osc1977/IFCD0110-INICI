@@ -8,11 +8,16 @@
         <!-- Esto sirve llamar los estilos de un documento css, el un icono en la pestaña de la página-->
         <link rel="stylesheet" href="./css/estils-form-grid.css" />
         <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+        
 
         <!-- ========================================================== 
          ICONES (es treuen de https://fontawesome.com/search?ic=free-collection )
          ==========================================================  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ========================================================== ACTIVAR PARA VER LOS EFECTOS (ver en https://getbootstrap.com/docs/5.3/getting-started/introduction/) 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
+        ==========================================================  -->
 
         <style>
             /* Aqui van los estilos, tambien se pueden poner en un documento css, es preferible */
@@ -43,7 +48,10 @@
             <h2>Contingut principal de la pàgina</h2>
 
             <section>
-                <article id="inici">                    
+                <button onclick="javascript: alert ('Avui es divendres')">
+                    Hola
+                </button>                  
+                <article id="inici">
                     <figure>
                         <img class="img-Banner" src="./img/cine.png" alt="Cine">
                         <figcaption>Cine</figcaption>
@@ -51,7 +59,7 @@
                     <p>Id velit ut tortor pretium viverra suspendisse. Orci sagittis eu volutpat odio facilisis. Ac felis donec et odio pellentesque diam volutpat commodo. Potenti nullam ac tortor vitae purus. Integer vitae justo eget magna fermentum iaculis eu. Duis ultricies lacus sed turpis. A arcu cursus vitae congue mauris. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Sit amet justo donec enim diam.</p>
                     <p>Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Feugiat nisl pretium fusce id velit ut tortor pretium. Fermentum iaculis eu non diam phasellus. Leo duis ut diam quam nulla porttitor. Tortor at risus viverra adipiscing at in tellus integer feugiat. Lacinia quis vel eros donec ac. Turpis tincidunt id aliquet risus feugiat. Id nibh tortor id aliquet lectus proin nibh nisl. Nunc sed velit dignissim sodales.</p>
                 </article>
-                <article>                    
+                <article>
                     <figure>
                         <img class="img-Banner" src="./img/fonscine.webp" alt="Cine paraiso">
                         <figcaption>Cine paraiso</figcaption>
@@ -85,22 +93,22 @@
             <section class="registre" id="regis">
                 <h2>Registre d'usuari</h2>
                 <div class="usuario">
-                    <figure>
-                        <img class="imatge" src="./img/logo.svg" alt="Registrate">
+                    <figure class="imatge" style="background-color: blueviolet;">
+                        <img src="./img/logo.svg" alt="Registrate">
                     </figure>
-                    <form action="https://www.google.com/" method="get" target="_">
+                    <form action="https://www.google.com/" method="get" target="_blank">
                         <label for="fnom">Nombre:</label>
-                        <input type="text" name="fnom" id="fnom" placeholder="Nombre"><br>
+                        <input type="text" name="fnom" id="fnom" placeholder="Nombre" autocomplete="address-line1"><br>
                         <label for="fcogn">Apellido:</label>
                         <input type="text" name="fcogn" id="fcogn" placeholder="Apellidos"><br>
                         <label for="ftel">Telefono:</label>
                         <input type="text" name="ftel" id="ftel" placeholder="Telefono"><br>
 
-                        <label for="fnom">Quin es el teu gènere:</label><br>
-                            <input type="radio" id="home" name="genere" value="home">
-                            <label for="home">Home</label> 
-                            <input type="radio" id="dona" name="genere" value="dona">
-                            <label for="dona">Dona</label><br>
+                        <label for="fnom">Gènere:</label>
+                        <input type="radio" id="home" name="genere" value="home">
+                        <label for="home">Home</label> 
+                        <input type="radio" id="dona" name="genere" value="dona">
+                        <label for="dona">Dona</label><br>
 
                         <label for="fusuario">Usuario:</label>
                         <input type="text" name="fusuario" id="fusuario" placeholder="Usuario"><br>
@@ -108,7 +116,7 @@
                         <input type="text" name="femail" id="femail" placeholder="email"><br>
                         <label for="fpassw">Contrasenya:</label>
                         <input type="text" name="fpassw" id="fpassw" placeholder="Contraseña"><br>
-                        <input type="submit" value="Enviar datos"><br>
+                        <input type="submit" value="Enviar datos">
                         <input type="reset" value="Borrar datos">
                     </form>
                 </div>
@@ -120,47 +128,71 @@
                 <h2>Edicio del perfil</h2>
                 <hr>
 
-                <table class="tabla">
-                    <tr>
-                        <th>
-                            <label for="fnom">Nombre</label>
-                        </th>
-                        <td>
-                            <input type="text" name="fnom" id="fnom">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="fusuario">Usuario</label>
-                        </th>
-                        <td>
-                            <input type="text" name="fusuario" id="fusuario">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="fpassw">Contrasenya</label>
-                        </th>
-                        <td>
-                            <input type="text" name="fpassw" id="fpassw">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            <label for="fnom">Quin es el teu gènere:</label>
-                        </th>
-                        <td>
-                            <input type="radio" id="home" name="genere" value="home">
-                            <label for="home">Home</label> 
-                            <input type="radio" id="dona" name="genere" value="dona">
-                            <label for="dona">Dona</label>
-                        </td>
-                    </tr>
-
-                </table>
+                <form action="mailto:enviar@gmail.com" method="get" target="_blank">
+                    <table class="tabla">
+                        <tr>
+                            <th>
+                                <div class="bot-lab">
+                                    <label for="fnom">Nombre</label>
+                                </div>
+                            </th>
+                            <td >
+                                <input class="bot-inp" type="text" name="fnom" id="fnom">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="bot-lab">
+                                    <label for="fusuario">Usuario</label>
+                                </div>
+                            </th>
+                            <td>
+                                <input class="bot-inp" type="text" name="fusuario" id="fusuario">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="bot-lab">
+                                    <label for="fpassw">Contrasenya</label>
+                                </div>
+                            </th>
+                            <td>
+                                <input class="bot-inp" type="text" name="fpassw" id="fpassw" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="bot-lab">
+                                    <label class="font" for="fnom">Gènere:</label>
+                                </div>
+                            </th>
+                            <td>
+                                <input type="radio" id="home" name="genere" value="home">
+                                <label for="home">Home</label> 
+                                <input type="radio" id="dona" name="genere" value="dona">
+                                <label for="dona">Dona</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <select name="cotxes" id="cotxes">
+                                    <option value="">-</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Seat">Seat</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Renault">Renault</option>
+                                </select>
+                            </th>
+                            <td>
+                                <input type="submit" value="enviar email">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
 
 
             </section>
+            <!-- <button type="button" class="btn-close" aria-label="Close"></button> -->
             
         </main>
 
@@ -204,6 +236,14 @@
         <footer>
             ©(2026) Desenvolupado por Oscar. Todos los derechos reservados.
         </footer>
-    </body>
+
+
+
+    <!-- ========================================================== ACTIVAR PARA VER LOS EFECTOS (ver en https://getbootstrap.com/docs/5.3/getting-started/introduction/) 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        ==========================================================  -->
+
+
+  </body>
 </html>
 
