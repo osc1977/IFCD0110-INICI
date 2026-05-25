@@ -1,0 +1,6 @@
+:root{
+    --fons-cap-peu: #0026ff;
+}
+.alert-primary{
+    background-color: rgb(77, 255, 196);
+}

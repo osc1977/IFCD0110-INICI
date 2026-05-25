@@ -1,0 +1,19 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "cap cap"
+        "llista llista"
+        "contingut banner"
+        "peu peu";
+    grid-template-columns: auto 15%;
+    grid-template-rows: 3rem 4rem 8fr 2rem;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
