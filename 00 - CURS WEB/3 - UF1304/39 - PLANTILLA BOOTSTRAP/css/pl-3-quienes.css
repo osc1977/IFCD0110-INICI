@@ -1,0 +1,12 @@
+.text{
+    text-align: left;
+}
+.titular{
+    font-size: xx-large;
+    text-align: center;
+}
+/* ul > li{
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 20px;
+} */
