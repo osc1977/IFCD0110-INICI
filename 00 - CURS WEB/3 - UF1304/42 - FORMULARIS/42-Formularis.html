@@ -1,0 +1,74 @@
+<!-- ==================================================
+    nombre del proyecto:	42-Formularis.html
+    versión:				1.0
+    descripción:			Exemple de formularis
+    fecha:					fecha
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici events</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/42-Formularis.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body onload="msgBenvinguda()">
+    
+    <header>
+        Exercici per veure tipus d'events 
+    </header>
+    
+    <nav>
+        <ul>
+            <li>Opcio1</li>
+            <li>Opcio2</li>
+            <li>Opcio3</li>
+            <li>Opcio4</li>
+        </ul>
+    </nav>
+    
+    <main>
+        <button onclick="fesclic()">Fes Click</button>
+        <button onmouseover="canvicolor()" onmouseout="tornacolor()">Canvi de color</button>
+        <button ondblclick="DblClick()">Fes Doble Click</button>
+        <div class="caixa" id="caixa" onscroll="mostranumero()" onmouseout="tornacolor()">
+            Caixa que canvia de color. <p>Armes E complit tot lo. L'estament e ofici de cavalleria; lo terç és de. Entrat en cinc llices de. Alt enginy havia servit per llong temps l'art de cavalleria. E cavalleries se fa singular e. Cinquanta-cinc anys mogut per divinal inspiració propasà de retraure's. Camp clos u per u e de. Present vull satisfer a cascú. E de Santa Maria Egipcíaca E moltes gestes e innumerables. Com tot cristià deu anar si li. Són estats fets e compilats de gestes e històries antigues. Per u e de tots havia obtesa victòria gloriosa. Anar havent dolor e contricció de moltes. De llinatge e molt més de. La primera part serà del principi de cavalleria; la. Totes ses voluntats si bé. Fugir vergonyosament La santa dona Judic ab ànimo viril. De camp clos u per u e de tots havia.</p>
+            <p>De grandíssim perill per què ara de present vull satisfer. Vençre si usar volen de discreció; e per ço. E la fama d'aquell no deu. Desfalliments E aquest virtuós comte hi. Los actes frescs de nostres dies és estat doncs molt. Majestat divina plau que jo m'he a. Vol exercir ab saviesa: com per la. Justes e torneigs nodrint los infants de poca edat en. Poca edat E havia fet fer un anell d'or. Part serà del principi de cavalleria; la segona serà de. Qui per la república no han recusat sotsmetre llurs. Donà molt més que no devia que tots ne restaren. Per què ara de present vull satisfer. No deu preterir per longitud de molts dies.</p>
+        </div>
+        <hr>
+        <details ontoggle="canviOnOff()">
+            <summary>Curs HTML, CSS i JS</summary>
+            Aquest és un curs de 600 hores on aprendrem a cofeccionar pàgines web utilitzant les rtecnologies HTML, CSS i JS.
+        </details>
+        
+    </main>
+    
+    <aside>
+        Banners
+    </aside>
+    
+    <footer>
+        · ©(2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+
+    <script src="./js/42-form.js"></script>
+    
+</body>
+    
+</html>

@@ -1,0 +1,71 @@
+<!-- ==================================================
+    nombre del proyecto:	42-Formularis.html
+    versión:				1.0
+    descripción:			Exemple de formularis
+    fecha:					fecha
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici patrons</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/43-Patrons.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body onload="msgBenvinguda()">
+    
+    <header>
+        Exercici per veure patrons 
+    </header>
+    
+    <nav>
+        <ul>
+            <li>Opcio1</li>
+            <li>Opcio2</li>
+            <li>Opcio3</li>
+            <li>Opcio4</li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form action="https://ojoseeu.wordpress.com/" method="get" target="_blank">
+            <label for="telefon">Telèfon</label>
+            <input type="tel" list="tel-list" id="telefon" name="telefon" minlength="10" maxlength="10" placeholder="123-456789" pattern="[0-9]{3}-[0-9]{6}">
+            <datalist id="tel-list">
+                <option value="555-0100"></option>
+                <option value="555-0101"></option>
+            </datalist>
+            <input type="submit" value="Enviar consulta">
+        </form>
+        
+    </main>
+    
+    <aside>
+        Banners
+    </aside>
+    
+    <footer>
+        · ©(2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+
+    <script src="./js/43-patrons.js"></script>
+    
+</body>
+    
+</html>
