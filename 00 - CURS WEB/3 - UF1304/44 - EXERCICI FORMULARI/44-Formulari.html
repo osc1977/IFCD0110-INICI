@@ -1,0 +1,190 @@
+<!-- ==================================================
+    nombre del proyecto:	name.html
+    versión:				versión
+    descripción:			descripción
+    fecha:					fecha
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Bootstrap</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/44-formulari.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body>
+    
+    <header>
+        Formulario de Ejemplo
+    </header>
+    
+    <nav>
+        Menu
+    </nav>
+    
+    <main>
+        <div>
+            <h2>Contenido principal </h2>
+        </div>
+        <form>
+
+            <!-- ========================================
+             NOMBRE
+             ======================================== -->
+            <label for="fnom">Nom:</label>
+            <input type="text" name="fnom" id="fnom" size="15" minlength="2" maxlength="15" placeholder="Nom" required pattern="[A-Za-z]{2,15}" title="Posa el teu nom">
+
+            <!-- ========================================
+             APELLIDO
+             ======================================== -->
+            <label for="fcognom">Cognom:</label>
+            <input type="text" name="fcognom" id="fcognom" size="30" minlength="2" maxlength="30" placeholder="Cognom" required pattern="[A-Za-z]{2,30}" title="Posa el teu cognom">
+
+            <br>
+
+            <!-- ========================================
+             EMAIL
+             ======================================== -->
+            <label for="femail">email:</label>
+            <input type="email" name="femail" id="femail" size="50" minlength="2" maxlength="50" placeholder="email@email.com" required pattern="[0-9A-Za-z]+(\.*[0-9A-Za-z]+)@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}" title="Posa el teu correu electronic">
+            
+            <br>
+
+            <!-- ========================================
+             RRSS
+             ======================================== -->
+            <label for="frrss">RR.SS.:</label>
+            <input type="text" name="frrss" id="frrss" size="10" minlength="2" maxlength="10" placeholder="rr.ss." list="RRSS" required pattern="[a|b]{2,10}" title="Selecciona la/les teva/es rrss">
+                <datalist id="RRSS">
+                    <option value="-"></option>
+                    <option value="Instagram"></option>
+                    <option value="Facebook"></option>
+                    <option value="LinkedIn"></option>
+                    <option value="X"></option>
+                </datalist>
+
+            <br>
+
+            <!-- ========================================
+             PAGINA WEB
+             ======================================== -->
+            <label for="fweb">Pàgina web:</label>
+            <input type="url" name="fweb" id="fweb" size="50" minlength="6" maxlength="50" placeholder="Pàgina web" required pattern="" title="Posa la teva pàgina web">
+
+            <br>
+
+
+            <!-- ========================================
+             EDAT
+             ======================================== -->
+            <label for="fedat">Edat:</label>
+            <input type="number" name="fedat" id="fedat" size="10" minlength="2" maxlength="10" placeholder="Edat" required pattern="" title="Possa la teva Edat">
+
+            <br>
+
+
+            <!-- ========================================
+             ADREÇA
+             ======================================== -->
+            <label for="fadreca">Adreça:</label>
+            <input type="text" name="fadreca" id="fadreca" size="50" minlength="2" maxlength="50" placeholder="Nom" required pattern="" title="Posa l'adreça">
+
+            <br>
+
+
+            <!-- ========================================
+             CODI POSTAL
+             ======================================== -->
+            <label for="fpostal">C.P.:</label>
+            <input type="text" name="fpostal" id="fpostal" size="5" maxlength="5" placeholder="C.P." required pattern="" title="No et passis de 10 caracters, i no posis numeros">
+
+            <br>
+
+
+            <!-- ========================================
+             PROVINCIA
+             ======================================== -->
+            <label for="fprovincia">Provincia:</label>
+            <input type="text" name="fprovincia" id="fprovincia" size="25" minlength="5" maxlength="25" placeholder="Provincia" required pattern="" title="Posa la Provincia">
+
+            <br>
+
+
+            <!-- ========================================
+             POBLACIO
+             ======================================== -->
+            <label for="fpoblacio">Poblacio:</label>
+            <input type="text" name="fpoblacio" id="fpoblacio" size="25" minlength="2" maxlength="25" placeholder="Població" required pattern="" title="Posa la Població">
+
+            <br>
+
+
+            <!-- ========================================
+             PAIS
+             ======================================== -->
+            <label for="fpais">Pais:</label>
+            <input type="text" name="fpais" id="fpais" size="10" minlength="2" maxlength="10" placeholder="Pais" required pattern="" title="Posa el pais">
+
+            <br>
+
+
+           <!-- ========================================
+             TELEFON
+             ======================================== -->
+            <label for="ftel">Telèfon:</label>
+            <input type="tel" name="ftel" id="ftel" size="10" minlength="2" maxlength="10" placeholder="Telèfon" required pattern="" title="Posa el teu telefon">
+
+            <br>
+
+
+            <!-- ========================================
+             MOBIL
+             ======================================== -->
+            <label for="fmobil">Mobil:</label>
+            <input type="number" name="fmobil" id="fmobil" size="10" minlength="2" maxlength="10" placeholder="Nom" required pattern="" title="Posa el teu mobil">
+
+            <br>
+
+
+            <!-- ========================================
+             CONTRASEÑA
+             ======================================== -->
+            <label for="fpassword">Contrasenya:</label>
+            <input type="password" name="fpassword" id="fpassword" size="10" minlength="2" maxlength="10" placeholder="Nom" required pattern="" title="Posa una contrassenya">
+
+            <br>
+
+            <input type="submit">
+
+
+        </form>
+
+    </main>
+    
+    <aside>
+        Banners
+    </aside>
+    
+    <footer>
+        · ©(2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+    
+</body>
+    
+</html>
