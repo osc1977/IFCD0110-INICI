@@ -1,3 +1,6 @@
+/* <!--  ==================================================
+COMUN
+==================================================== --> */
 .contenedor{
     max-width:1200px;
     margin:0 auto;
@@ -10,4 +13,36 @@
     display:flex;
     flex-direction:column;
     margin-bottom:10px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#333;
+}
+
+
+
+/* <!--  ==================================================
+PAGINA DE LISTADOS
+==================================================== --> */
+
+.franjita-comunidad h2{
+    margin:8px 0;
+    color:#222;
+}
+.franja-hotel{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:transform 0.3s;
+}
+.lista-hoteles{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
