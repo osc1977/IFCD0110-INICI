@@ -48,13 +48,33 @@
              NOMBRE
              ======================================== -->
             <label for="fnom">Nom:</label>
-            <input type="text" name="fnom" id="fnom" size="15" minlength="2" maxlength="15" placeholder="Nom" required pattern="[A-Za-z]{2,15}" title="Posa el teu nom">
+            <input 
+                type="text" 
+                name="fnom" 
+                id="fnom" 
+                size="15" 
+                minlength="2" 
+                maxlength="15" 
+                placeholder="Nom" 
+                required 
+                pattern="[A-Za-z]{2,15}" 
+                title="Posa el teu nom">
 
             <!-- ========================================
              APELLIDO
              ======================================== -->
             <label for="fcognom">Cognom:</label>
-            <input type="text" name="fcognom" id="fcognom" size="30" minlength="2" maxlength="30" placeholder="Cognom" required pattern="[A-Za-z]{2,30}" title="Posa el teu cognom">
+            <input 
+                type="text" 
+                name="fcognom" 
+                id="fcognom" 
+                size="30" 
+                minlength="2" 
+                maxlength="30" 
+                placeholder="Cognom" 
+                required 
+                pattern="[A-Za-z]{2,30}" 
+                title="Posa el teu cognom">
 
             <br>
 
@@ -62,7 +82,17 @@
              EMAIL
              ======================================== -->
             <label for="femail">email:</label>
-            <input type="email" name="femail" id="femail" size="50" minlength="2" maxlength="50" placeholder="email@email.com" required pattern="[0-9A-Za-z]+(\.*[0-9A-Za-z]+)@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}" title="Posa el teu correu electronic">
+            <input
+                type="email"
+                name="femail"
+                id="femail"
+                size="35"
+                minlength="2"
+                maxlength="35"
+                placeholder="email@email.com"
+                required
+                pattern="[0-9A-Za-z]+(\.*[0-9A-Za-z]+)@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}"
+                title="Posa el teu correu electronic">
             
             <br>
 
@@ -70,14 +100,33 @@
              RRSS
              ======================================== -->
             <label for="frrss">RR.SS.:</label>
-            <input type="text" name="frrss" id="frrss" size="10" minlength="2" maxlength="10" placeholder="rr.ss." list="RRSS" required pattern="[a|b]{2,10}" title="Selecciona la/les teva/es rrss">
+            <input 
+                type="text" 
+                name="frrss" 
+                id="frrss" 
+                size="11" 
+                placeholder="Ej. Instagram" 
+                list="RRSS" 
+                required 
+                title="Selecciona la/les teva/es rrss">
                 <datalist id="RRSS">
-                    <option value="-"></option>
+                    <option value="(ninguna)"></option>
                     <option value="Instagram"></option>
                     <option value="Facebook"></option>
                     <option value="LinkedIn"></option>
                     <option value="X"></option>
                 </datalist>
+            <input 
+                type="text" 
+                name="frrss" 
+                id="frrss" 
+                size="30" 
+                minlength="2" 
+                maxlength="30" 
+                placeholder="Ej. @instagram.es" 
+                required 
+                pattern="*[A-Za-z0-9]{2,30}"
+                title="Selecciona la/les teva/es rrss">
 
             <br>
 
@@ -85,7 +134,17 @@
              PAGINA WEB
              ======================================== -->
             <label for="fweb">Pàgina web:</label>
-            <input type="url" name="fweb" id="fweb" size="50" minlength="6" maxlength="50" placeholder="Pàgina web" required pattern="" title="Posa la teva pàgina web">
+            <input 
+                type="url" 
+                name="fweb" 
+                id="fweb" 
+                size="50" 
+                minlength="6" 
+                maxlength="50" 
+                placeholder="Pàgina web" 
+                required 
+                pattern="" 
+                title="Posa la teva pàgina web">
 
             <br>
 
@@ -94,7 +153,17 @@
              EDAT
              ======================================== -->
             <label for="fedat">Edat:</label>
-            <input type="number" name="fedat" id="fedat" size="10" minlength="2" maxlength="10" placeholder="Edat" required pattern="" title="Possa la teva Edat">
+            <input 
+                type="number" 
+                name="fedat" 
+                id="fedat" 
+                size="10" 
+                minlength="2" 
+                maxlength="10" 
+                placeholder="Edat" 
+                required 
+                pattern="" 
+                title="Possa la teva Edat">
 
             <br>
 
@@ -103,7 +172,17 @@
              ADREÇA
              ======================================== -->
             <label for="fadreca">Adreça:</label>
-            <input type="text" name="fadreca" id="fadreca" size="50" minlength="2" maxlength="50" placeholder="Nom" required pattern="" title="Posa l'adreça">
+            <input 
+                type="text" 
+                name="fadreca" 
+                id="fadreca" 
+                size="50" 
+                minlength="2" 
+                maxlength="50" 
+                placeholder="Nom" 
+                required 
+                pattern="" 
+                title="Posa l'adreça">
 
             <br>
 
@@ -112,7 +191,16 @@
              CODI POSTAL
              ======================================== -->
             <label for="fpostal">C.P.:</label>
-            <input type="text" name="fpostal" id="fpostal" size="5" maxlength="5" placeholder="C.P." required pattern="" title="No et passis de 10 caracters, i no posis numeros">
+            <input 
+                type="text" 
+                name="fpostal" 
+                id="fpostal" 
+                size="5" 
+                maxlength="5" 
+                placeholder="C.P." 
+                required 
+                pattern="[0-9]{4,5}" 
+                title="Codi postal">
 
             <br>
 
@@ -121,7 +209,17 @@
              PROVINCIA
              ======================================== -->
             <label for="fprovincia">Provincia:</label>
-            <input type="text" name="fprovincia" id="fprovincia" size="25" minlength="5" maxlength="25" placeholder="Provincia" required pattern="" title="Posa la Provincia">
+            <input 
+                type="text" 
+                name="fprovincia" 
+                id="fprovincia" 
+                size="25" 
+                minlength="5" 
+                maxlength="25" 
+                placeholder="Provincia" 
+                required 
+                pattern="" 
+                title="Posa la Provincia">
 
             <br>
 
@@ -130,7 +228,17 @@
              POBLACIO
              ======================================== -->
             <label for="fpoblacio">Poblacio:</label>
-            <input type="text" name="fpoblacio" id="fpoblacio" size="25" minlength="2" maxlength="25" placeholder="Població" required pattern="" title="Posa la Població">
+            <input 
+                type="text" 
+                name="fpoblacio" 
+                id="fpoblacio" 
+                size="25" 
+                minlength="5" 
+                maxlength="25" 
+                placeholder="Població" 
+                required 
+                pattern="" 
+                title="Posa la Població">
 
             <br>
 
@@ -139,7 +247,17 @@
              PAIS
              ======================================== -->
             <label for="fpais">Pais:</label>
-            <input type="text" name="fpais" id="fpais" size="10" minlength="2" maxlength="10" placeholder="Pais" required pattern="" title="Posa el pais">
+            <input 
+                type="text" 
+                name="fpais" 
+                id="fpais" 
+                size="25" 
+                minlength="2" 
+                maxlength="25" 
+                placeholder="Pais" 
+                required 
+                pattern="[A-Za-Z]{2,15}" 
+                title="Posa el pais">
 
             <br>
 
@@ -148,7 +266,17 @@
              TELEFON
              ======================================== -->
             <label for="ftel">Telèfon:</label>
-            <input type="tel" name="ftel" id="ftel" size="10" minlength="2" maxlength="10" placeholder="Telèfon" required pattern="" title="Posa el teu telefon">
+            <input 
+                type="tel" 
+                name="ftel" 
+                id="ftel" 
+                size="13" 
+                minlength="2" 
+                maxlength="11" 
+                placeholder="Ej. 666 777 888" 
+                required 
+                pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" 
+                title="Posa el teu telefon">
 
             <br>
 
@@ -157,7 +285,17 @@
              MOBIL
              ======================================== -->
             <label for="fmobil">Mobil:</label>
-            <input type="number" name="fmobil" id="fmobil" size="10" minlength="2" maxlength="10" placeholder="Nom" required pattern="" title="Posa el teu mobil">
+            <input 
+                type="tel" 
+                name="fmobil" 
+                id="fmobil" 
+                size="13" 
+                minlength="2" 
+                maxlength="10" 
+                placeholder="Ej. 666 777 888" 
+                required 
+                pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" 
+                title="Posa el teu mobil">
 
             <br>
 
@@ -166,7 +304,17 @@
              CONTRASEÑA
              ======================================== -->
             <label for="fpassword">Contrasenya:</label>
-            <input type="password" name="fpassword" id="fpassword" size="10" minlength="2" maxlength="10" placeholder="Nom" required pattern="" title="Posa una contrassenya">
+            <input 
+                type="password" 
+                name="fpassword" 
+                id="fpassword" 
+                size="20" 
+                minlength="8" 
+                maxlength="15" 
+                placeholder="Nom" 
+                required 
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
+                title="Posa una contrassenya que contingui una minuscula, una mayuscula, un numero i un caracter especial (@$!%*?&-.)">
 
             <br>
 

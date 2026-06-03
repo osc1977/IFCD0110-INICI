@@ -1,0 +1,141 @@
+<!-- ==================================================
+    fecha:					3 de Junio 2026
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/sty-form.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body>
+    
+    <header>
+        Formulario Buscador
+    </header>
+        
+    <main>
+        <form action="/enviar-opinion" method="post">
+
+            <h1>Déjanos tu opinión</h1>
+    
+            <!-- ========================================
+            TEMA
+            ======================================== -->
+            <div>
+                <label for="tema">Tema</label>
+                <input
+                    type="text"
+                    id="tema"
+                    name="tema"
+                    placeholder="Ej. Atención al cliente"
+                    required
+                    title="Escribe aquí tu tema">
+            </div>
+    
+            <!-- ========================================
+            OPINION ESCRITA
+            ======================================== -->
+            <div>
+                <label for="opinion">Opinión</label>
+                <textarea
+                    id="opinion"
+                    name="opinion"
+                    cols="50"
+                    rows="6"
+                    placeholder="Escribe aquí tu opinión..."
+                    maxlength="250" 
+                    pattern="" 
+                    required
+                    title="Escribe aquí tu opinión...">
+                </textarea>
+            </div>
+    
+            <!-- ========================================
+            VALORACION
+            ======================================== -->
+            <div>
+                <label>Valoración</label>
+    
+                <div>
+    
+                    <label>
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="1"
+                            required>
+                        <span>1 ★</span>
+                    </label>
+    
+                    <label>
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="2">
+                        <span>2 ★★</span>
+                    </label>
+    
+                    <label>
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="3">
+                        <span>3 ★★★</span>
+                    </label>
+    
+                    <label>
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="4">
+                        <span>4 ★★★★</span>
+                    </label>
+    
+                    <label>
+                        <input
+                            type="radio"
+                            name="rating"
+                            value="5">
+                        <span>5 ★★★★★</span>
+                    </label>
+    
+                </div>
+            </div>
+    
+            <!-- ========================================
+            BOTON SUBMIT
+            ======================================== -->
+            <button type="submit">
+                Enviar opinión
+            </button>
+    
+        </form>
+    
+
+    </main>
+        
+    <footer>
+        · © (2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+    
+</body>
+    
+</html>

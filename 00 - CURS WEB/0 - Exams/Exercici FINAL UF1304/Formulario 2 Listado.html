@@ -1,0 +1,139 @@
+<!-- ==================================================
+    fecha:					3 de Junio 2026
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/sty-form.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body>
+    
+    <header>
+        Formulario Buscador
+    </header>
+        
+    <main>
+
+        <h1>Hoteles Disponibles</h1>
+
+        <form action="/seleccionar-hotel" method="post">
+
+            <div>
+
+                <!-- ========================================
+                HOTEL PRIMERO
+                ======================================== -->
+                <div>
+                    <div>
+                        <span>Cataluña</span>
+                        <h2>Hotel Mediterráneo</h2>
+                        <p>Barcelona</p>
+                    </div>
+
+                    <!-- ========================================
+                    BOTON SUBMIT HOTEL PRIMERO
+                    ======================================== -->
+                    <button
+                        type="submit"
+                        name="hotel"
+                        value="Hotel Mediterráneo">
+                        Seleccionar
+                    </button>
+                </div>
+
+                <!-- ========================================
+                HOTEL SEGUNDO
+                ======================================== -->
+                <div>
+                    <div>
+                        <span>Madrid</span>
+                        <h2>Gran Hotel Central</h2>
+                        <p>Madrid</p>
+                    </div>
+
+                    <!-- ========================================
+                    BOTON SUBMIT HOTEL SEGUNDO
+                    ======================================== -->
+                    <button
+                        type="submit"
+                        name="hotel"
+                        value="Gran Hotel Central">
+                        Seleccionar
+                    </button>
+                </div>
+
+                <!-- ========================================
+                HOTEL TERCERO
+                ======================================== -->
+                <div>
+                    <div>
+                        <span>Comunidad Valenciana</span>
+                        <h2>Costa Azul Resort</h2>
+                        <p>Valencia</p>
+                    </div>
+
+                    <!-- ========================================
+                    BOTON SUBMIT HOTEL TERCERO
+                    ======================================== -->
+                    <button
+                        type="submit"
+                        name="hotel"
+                        value="Costa Azul Resort">
+                        Seleccionar
+                    </button>
+                </div>
+
+                <!-- ========================================
+                HOTEL CUARTO
+                ======================================== -->
+                <div>
+                    <div>
+                        <span>Andalucia</span>
+                        <h2>Hotel Plaza Mayor</h2>
+                        <p>Sevilla</p>
+                    </div>
+
+                    <!-- ========================================
+                    BOTON SUBMIT HOTEL CUARTO
+                    ======================================== -->
+                    <button
+                        type="submit"
+                        name="hotel"
+                        value="Hotel Plaza Mayor">
+                        Seleccionar
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+   
+
+    </main>
+        
+    <footer>
+        · © (2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+    
+</body>
+    
+</html>

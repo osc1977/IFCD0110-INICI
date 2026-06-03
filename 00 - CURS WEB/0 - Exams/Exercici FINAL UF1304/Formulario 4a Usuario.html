@@ -1,0 +1,93 @@
+<!-- ==================================================
+    fecha:					3 de Junio 2026
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/sty-form.css">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body>
+    
+    <header>
+        Formulario de usuario
+    </header>
+        
+    <main>
+        <div>  
+            <form action="/login" method="post">
+    
+                <h2>Acceso al Sistema</h2>
+    
+                <!-- ========================================
+                USUARIO
+                ======================================== -->
+                <div>
+                    <label for="usuario">Identificador de usuario</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        size="40" 
+                        minlength="5" 
+                        maxlength="25" 
+                        placeholder="Introduzca su usuario"
+                        required
+                        pattern="[^\s]{5,25}"
+                        title="No puede contener espacios">
+                </div>
+    
+                <!-- ========================================
+                CONTRASEÑA
+                ======================================== -->
+                <div>
+                    <label for="clave">Clave de acceso</label>
+                    <input
+                        type="password"
+                        id="clave"
+                        name="clave"                        
+                        size="25" 
+                        minlength="8" 
+                        maxlength="15" 
+                        placeholder="Introduzca su contraseña"
+                        required 
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
+                        title="Pon una contraseña que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)">
+                </div>
+    
+                <!-- ========================================
+                BOTON
+                ======================================== -->
+                <button type="submit">
+                    Acceder
+                </button>
+    
+            </form>
+        </div>
+    </main>
+        
+    <footer>
+        · © (2026) · Desenvolupado por Oscar · Todos los derechos reservados ·
+    </footer>
+    
+</body>
+    
+</html>
