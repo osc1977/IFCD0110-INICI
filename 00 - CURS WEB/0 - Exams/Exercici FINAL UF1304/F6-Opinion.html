@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador</title>
+    <title>Opinion</title>
 
     <!--  ==================================================
     LIBRERIAS
@@ -28,18 +28,18 @@
 <body>
     
     <header>
-        Formulario Buscador
+        Formulario Opinion del cliente
     </header>
         
     <main>
-        <form action="/enviar-opinion" method="post">
+        <form action="./Index.html" method="post">
 
             <h1>Déjanos tu opinión</h1>
     
             <!-- ========================================
             TEMA
             ======================================== -->
-            <div>
+            <div class="form-filas">
                 <label for="tema">Tema</label>
                 <input
                     type="text"
@@ -47,13 +47,14 @@
                     name="tema"
                     placeholder="Ej. Atención al cliente"
                     required
-                    title="Escribe aquí tu tema">
+                    title="Escribe aquí tu tema"
+                    tabindex="1">
             </div>
     
             <!-- ========================================
             OPINION ESCRITA
             ======================================== -->
-            <div>
+            <div class="form-filas">
                 <label for="opinion">Opinión</label>
                 <textarea
                     id="opinion"
@@ -64,14 +65,14 @@
                     maxlength="250" 
                     pattern="" 
                     required
-                    title="Escribe aquí tu opinión...">
-                </textarea>
+                    title="Escribe aquí tu opinión..."
+                    tabindex="2"></textarea>
             </div>
     
             <!-- ========================================
             VALORACION
             ======================================== -->
-            <div>
+            <div class="form-filas">
                 <label>Valoración</label>
     
                 <div>
@@ -81,7 +82,8 @@
                             type="radio"
                             name="rating"
                             value="1"
-                            required>
+                            required
+                            tabindex="3">
                         <span>1 ★</span>
                     </label>
     
@@ -89,7 +91,8 @@
                         <input
                             type="radio"
                             name="rating"
-                            value="2">
+                            value="2"
+                            tabindex="4">
                         <span>2 ★★</span>
                     </label>
     
@@ -97,7 +100,8 @@
                         <input
                             type="radio"
                             name="rating"
-                            value="3">
+                            value="3"
+                            tabindex="5">
                         <span>3 ★★★</span>
                     </label>
     
@@ -105,7 +109,8 @@
                         <input
                             type="radio"
                             name="rating"
-                            value="4">
+                            value="4"
+                            tabindex="6">
                         <span>4 ★★★★</span>
                     </label>
     
@@ -113,7 +118,8 @@
                         <input
                             type="radio"
                             name="rating"
-                            value="5">
+                            value="5"
+                            tabindex="7">
                         <span>5 ★★★★★</span>
                     </label>
     
@@ -123,7 +129,7 @@
             <!-- ========================================
             BOTON SUBMIT
             ======================================== -->
-            <button type="submit">
+            <button type="submit" tabindex="8">
                 Enviar opinión
             </button>
     

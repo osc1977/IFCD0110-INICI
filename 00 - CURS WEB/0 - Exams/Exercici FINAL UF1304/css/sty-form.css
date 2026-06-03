@@ -1,7 +1,13 @@
-.container{
+.contenedor{
     max-width:1200px;
     margin:0 auto;
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:30px;
+}
+
+.form-filas{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
 }

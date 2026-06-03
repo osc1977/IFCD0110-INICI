@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador</title>
+    <title>Ficha</title>
 
     <!--  ==================================================
     LIBRERIAS
@@ -28,13 +28,13 @@
 <body>
     
     <header>
-        Formulario Buscador
+        Formulario Ficha
     </header>
         
     <main>
 
 
-        <form action="/reservar" method="post">
+        <form action="./F4a-Usuario.html" method="get" target="_blank">
 
             <section>
     
@@ -83,7 +83,9 @@
                                     min="0"
                                     max="5"
                                     value="0"
-                                    title="Habitación Individual">
+                                    title="Habitación Individual - Cuantas desea"
+                                    required
+                                    tabindex="1">
                                     
                                 </td>
                             </tr>
@@ -99,7 +101,9 @@
                                     min="0"
                                     max="5"
                                     value="0"
-                                    title="Habitación Doble">
+                                    title="Habitación Doble - Cuantas desea"
+                                    required
+                                    tabindex="2">
                                 </td>
                             </tr>
                             
@@ -114,7 +118,9 @@
                                     min="0"
                                     max="5"
                                     value="0"
-                                    title="Habitación Suite">
+                                    title="Habitación Suite - Cuantas desea"
+                                    required
+                                    tabindex="3">
                             </td>
                         </tr>
     
@@ -136,7 +142,8 @@
                     <input 
                         type="checkbox"
                         id="precioMasBarato"
-                        name="precioMasBarato">
+                        name="precioMasBarato"
+                        tabindex="4">
     
                     <label for="precioMasBarato">
                         Notificar al gestor si he encontrado la misma
@@ -150,7 +157,8 @@
                     <input 
                         type="checkbox"
                         id="almuerzo"
-                        name="almuerzo">
+                        name="almuerzo"
+                        tabindex="5">
     
                     <label for="almuerzo">
                         Reservar estancia con almuerzo incluido.
@@ -169,7 +177,7 @@
     
                 <div>
     
-                    <div>
+                    <div class="form-filas">
                         <label for="horaEntrada">
                             Hora deseada de entrada
                         </label>
@@ -177,28 +185,34 @@
                         <input 
                             type="time"
                             id="horaEntrada"
-                            name="horaEntrada">
+                            name="horaEntrada"
+                            required
+                            title="Indique la hora de entrada"
+                            tabindex="6">
                     </div>
-    
-                    <div>
+                        
+                    <div class="form-filas">
                         <label for="horaSalida">
                             Hora deseada de salida
                         </label>
-    
+                        
                         <input 
-                            type="time"
-                            id="horaSalida"
-                            name="horaSalida">
+                        type="time"
+                        id="horaSalida"
+                        name="horaSalida"
+                        required
+                        title="Indique la hora de salida"
+                        tabindex="7">
                     </div>
     
                 </div>
     
                 <div>
-    
                     <input 
                         type="checkbox"
                         id="camaExtra"
-                        name="camaExtra">
+                        name="camaExtra"
+                        tabindex="8">
     
                     <label for="camaExtra">
                         Solicitar cama adicional.
@@ -211,7 +225,7 @@
                     <!-- ========================================
                     COMENTARIOS
                     ======================================== -->
-                    <label for="comentarios">
+                    <label class="form-filas" for="comentarios">
                         Otras peticiones o comentarios
                     </label>
     
@@ -220,12 +234,13 @@
                         name="comentarios"
                         cols="50"
                         rows="6"
+                        minlength="4"
                         maxlength="250" 
                         placeholder="Indique cualquier solicitud especial..."
                         pattern="" 
                         required
-                        title="Escribe aquí su comentario...">
-                    </textarea>
+                        title="Escribe aquí tu petición..."
+                        tabindex="9"></textarea>
 
                 </div>
     
@@ -234,7 +249,7 @@
             <!-- ========================================
             BOTON SUBMIT
             ======================================== -->
-            <button type="submit">
+            <button type="submit" tabindex="10">
                 Reservar Habitación
             </button>
     

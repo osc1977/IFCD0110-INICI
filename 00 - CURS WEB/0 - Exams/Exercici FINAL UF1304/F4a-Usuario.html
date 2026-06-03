@@ -33,14 +33,14 @@
         
     <main>
         <div>  
-            <form action="/login" method="post">
+            <form action="./F4b-Alta.html" method="get" target="_blank">
     
                 <h2>Acceso al Sistema</h2>
     
                 <!-- ========================================
                 USUARIO
                 ======================================== -->
-                <div>
+                <div class="form-filas">
                     <label for="usuario">Identificador de usuario</label>
                     <input
                         type="text"
@@ -52,13 +52,14 @@
                         placeholder="Introduzca su usuario"
                         required
                         pattern="[^\s]{5,25}"
-                        title="No puede contener espacios">
+                        title="No puede contener espacios"
+                        tabindex="1">
                 </div>
     
                 <!-- ========================================
                 CONTRASEÑA
                 ======================================== -->
-                <div>
+                <div class="form-filas">
                     <label for="clave">Clave de acceso</label>
                     <input
                         type="password"
@@ -70,13 +71,14 @@
                         placeholder="Introduzca su contraseña"
                         required 
                         pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
-                        title="Pon una contraseña que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)">
+                        title="Pon una contraseña que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)"
+                        tabindex="2">
                 </div>
     
                 <!-- ========================================
                 BOTON
                 ======================================== -->
-                <button type="submit">
+                <button type="submit" tabindex="3">
                     Acceder
                 </button>
     
