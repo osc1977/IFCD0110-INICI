@@ -33,227 +33,231 @@
         
     <main>
 
+        <div class="caixa-form-gr">
+            
+            <form action="./F4a-Usuario.html" method="get" target="_blank">
 
-        <form action="./F4a-Usuario.html" method="get" target="_blank">
-
-            <section>
-    
-                <!-- ========================================
-                INFORMACION DEL HOTEL
-                ======================================== -->
-                <h1>Hotel Mediterráneo</h1>
-    
-                <p>★★★★ · Barcelona, España</p>
-    
-                <p>
-                    Hotel situado en el centro de la ciudad con acceso a
-                    restaurantes, comercios y transporte público.
-                </p>
-    
-            </section>
-    
-            <section>
-    
-                <!-- ========================================
-                TABLA PARA LA RESERVA DE HABITACION
-                ======================================== -->
-                <h2>Habitaciones disponibles</h2>
-    
-                <table>
-    
-                    <thead>
-                        <tr>
-                            <th>Tipo de habitación</th>
-                            <th>Capacidad</th>
-                            <th>Precio/Noche</th>
-                            <th>Cantidad</th>
-                        </tr>
-                    </thead>
-    
-                    <tbody>
-    
-                        <tr>
-                            <td>Individual</td>
-                            <td>1 adulto</td>
-                            <td>90 €</td>
-                            <td>
-                                <input 
-                                    type="number"
-                                    name="habitacionIndividual"
-                                    min="0"
-                                    max="5"
-                                    value="0"
-                                    title="Habitación Individual - Cuantas desea"
-                                    required
-                                    tabindex="1">
-                                    
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Doble</td>
-                                <td>2 adultos</td>
-                                <td>140 €</td>
-                                <td>
-                                    <input 
-                                    type="number"
-                                    name="habitacionDoble"
-                                    min="0"
-                                    max="5"
-                                    value="0"
-                                    title="Habitación Doble - Cuantas desea"
-                                    required
-                                    tabindex="2">
-                                </td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Suite</td>
-                                <td>4 personas</td>
-                                <td>250 €</td>
-                                <td>
-                                    <input 
-                                    type="number"
-                                    name="habitacionSuite"
-                                    min="0"
-                                    max="5"
-                                    value="0"
-                                    title="Habitación Suite - Cuantas desea"
-                                    required
-                                    tabindex="3">
-                            </td>
-                        </tr>
-    
-                    </tbody>
-    
-                </table>
-    
-            </section>
-    
-            <section>
-    
-                <!-- ========================================
-                OPCIONES
-                ======================================== -->
-                <h2>Opciones adicionales</h2>
-    
-                <div>
-    
-                    <input 
-                        type="checkbox"
-                        id="precioMasBarato"
-                        name="precioMasBarato"
-                        tabindex="4">
-    
-                    <label for="precioMasBarato">
-                        Notificar al gestor si he encontrado la misma
-                        habitación a un precio más barato.
-                    </label>
-    
-                </div>
-    
-                <div>
-    
-                    <input 
-                        type="checkbox"
-                        id="almuerzo"
-                        name="almuerzo"
-                        tabindex="5">
-    
-                    <label for="almuerzo">
-                        Reservar estancia con almuerzo incluido.
-                    </label>
-    
-                </div>
-    
-            </section>
-    
-            <section>
-                
-                <!-- ========================================
-                PETICIONES ESPECIALES
-                ======================================== -->
-                <h2>Peticiones especiales</h2>
-    
-                <div>
-    
-                    <div class="form-filas">
-                        <label for="horaEntrada">
-                            Hora deseada de entrada
-                        </label>
-    
-                        <input 
-                            type="time"
-                            id="horaEntrada"
-                            name="horaEntrada"
-                            required
-                            title="Indique la hora de entrada"
-                            tabindex="6">
-                    </div>
-                        
-                    <div class="form-filas">
-                        <label for="horaSalida">
-                            Hora deseada de salida
-                        </label>
-                        
-                        <input 
-                        type="time"
-                        id="horaSalida"
-                        name="horaSalida"
-                        required
-                        title="Indique la hora de salida"
-                        tabindex="7">
-                    </div>
-    
-                </div>
-    
-                <div>
-                    <input 
-                        type="checkbox"
-                        id="camaExtra"
-                        name="camaExtra"
-                        tabindex="8">
-    
-                    <label for="camaExtra">
-                        Solicitar cama adicional.
-                    </label>
-    
-                </div>
-    
-                <div>
-    
+                <section>
+        
                     <!-- ========================================
-                    COMENTARIOS
+                    INFORMACION DEL HOTEL
                     ======================================== -->
-                    <label class="form-filas" for="comentarios">
-                        Otras peticiones o comentarios
-                    </label>
-    
-                    <textarea 
-                        id="comentarios"
-                        name="comentarios"
-                        cols="50"
-                        rows="6"
-                        minlength="4"
-                        maxlength="250" 
-                        placeholder="Indique cualquier solicitud especial..."
-                        pattern="" 
-                        required
-                        title="Escribe aquí tu petición..."
-                        tabindex="9"></textarea>
+                    <h1>Hotel Mediterráneo</h1>
+        
+                    <p>★★★★ · Barcelona, España</p>
+        
+                    <p>
+                        Hotel situado en el centro de la ciudad con acceso a
+                        restaurantes, comercios y transporte público.
+                    </p>
+        
+                </section>
+        
+                <section>
+        
+                    <!-- ========================================
+                    TABLA PARA LA RESERVA DE HABITACION
+                    ======================================== -->
+                    <h2>Habitaciones disponibles</h2>
+        
+                    <table>
+        
+                        <thead>
+                            <tr>
+                                <th>Tipo de habitación</th>
+                                <th>Capacidad</th>
+                                <th>Precio/Noche</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+        
+                        <tbody>
+        
+                            <tr>
+                                <td>Individual</td>
+                                <td>1 adulto</td>
+                                <td>90 €</td>
+                                <td>
+                                    <input 
+                                        type="number"
+                                        name="habitacionIndividual"
+                                        min="0"
+                                        max="5"
+                                        value="0"
+                                        title="Habitación Individual - Cuantas desea"
+                                        required
+                                        tabindex="1">
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Doble</td>
+                                    <td>2 adultos</td>
+                                    <td>140 €</td>
+                                    <td>
+                                        <input 
+                                        type="number"
+                                        name="habitacionDoble"
+                                        min="0"
+                                        max="5"
+                                        value="0"
+                                        title="Habitación Doble - Cuantas desea"
+                                        required
+                                        tabindex="2">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Suite</td>
+                                    <td>4 personas</td>
+                                    <td>250 €</td>
+                                    <td>
+                                        <input 
+                                        type="number"
+                                        name="habitacionSuite"
+                                        min="0"
+                                        max="5"
+                                        value="0"
+                                        title="Habitación Suite - Cuantas desea"
+                                        required
+                                        tabindex="3">
+                                </td>
+                            </tr>
+        
+                        </tbody>
+        
+                    </table>
+        
+                </section>
+        
+                <section>
+        
+                    <!-- ========================================
+                    OPCIONES
+                    ======================================== -->
+                    <h2>Opciones adicionales</h2>
+        
+                    <div>
+        
+                        <input 
+                            type="checkbox"
+                            id="precioMasBarato"
+                            name="precioMasBarato"
+                            tabindex="4">
+        
+                        <label for="precioMasBarato">
+                            Notificar al gestor si he encontrado la misma
+                            habitación a un precio más barato.
+                        </label>
+        
+                    </div>
+        
+                    <div>
+        
+                        <input 
+                            type="checkbox"
+                            id="almuerzo"
+                            name="almuerzo"
+                            tabindex="5">
+        
+                        <label for="almuerzo">
+                            Reservar estancia con almuerzo incluido.
+                        </label>
+        
+                    </div>
+        
+                </section>
+        
+                <section>
+                    
+                    <!-- ========================================
+                    PETICIONES ESPECIALES
+                    ======================================== -->
+                    <h2>Peticiones especiales</h2>
+        
+                    <div class="doble-col">
+        
+                        <div class="form-filas">
+                            <label for="horaEntrada">
+                                Hora deseada de entrada
+                            </label>
+        
+                            <input 
+                                type="time"
+                                id="horaEntrada"
+                                name="horaEntrada"
+                                required
+                                title="Indique la hora de entrada"
+                                tabindex="6">
+                        </div>
+                            
+                        <div class="form-filas">
+                            <label for="horaSalida">
+                                Hora deseada de salida
+                            </label>
+                            
+                            <input 
+                            type="time"
+                            id="horaSalida"
+                            name="horaSalida"
+                            required
+                            title="Indique la hora de salida"
+                            tabindex="7">
+                        </div>
+        
+                    </div>
+        
+                    <div>
+                        <input 
+                            type="checkbox"
+                            id="camaExtra"
+                            name="camaExtra"
+                            tabindex="8">
+        
+                        <label for="camaExtra">
+                            Solicitar cama adicional.
+                        </label>
+                        
+                    </div>
+                    
+                    <br>
+                    
+                    <div>
+        
+                        <!-- ========================================
+                        COMENTARIOS
+                        ======================================== -->
+                        <label class="form-filas" for="comentarios">
+                            Otras peticiones o comentarios
+                        </label>
+        
+                        <textarea 
+                            id="comentarios"
+                            name="comentarios"
+                            cols="50"
+                            rows="6"
+                            minlength="4"
+                            maxlength="250" 
+                            placeholder="Indique cualquier solicitud especial..."
+                            pattern="" 
+                            required
+                            title="Escribe aquí tu petición..."
+                            tabindex="9"></textarea>
 
-                </div>
+                    </div>
+        
+                </section>
+        
+                <!-- ========================================
+                BOTON SUBMIT
+                ======================================== -->
+                <button type="submit" tabindex="10">
+                    Reservar Habitación
+                </button>
     
-            </section>
-    
-            <!-- ========================================
-            BOTON SUBMIT
-            ======================================== -->
-            <button type="submit" tabindex="10">
-                Reservar Habitación
-            </button>
-    
-        </form>
+            </form>
+        </div>
 
     </main>
         

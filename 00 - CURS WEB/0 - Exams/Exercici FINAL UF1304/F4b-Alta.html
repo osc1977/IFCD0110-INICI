@@ -32,308 +32,318 @@
     </header>
         
     <main>
-        <form action="./F5-Confirmacion.html" method="get" target="_blank">
+        <div class="caixa-form-gr">
+            <form action="./F5-Confirmacion.html" method="get" target="_blank">
 
-            <h1>Alta de Usuario</h1>
+                <h1>Alta de Usuario</h1>
 
-            <div>
+                <div>
 
-                <!-- ========================================
-                OPCION GENERO HOMBRE MUJER
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="trato">Trato</label>
-                    <select 
-                        id="trato" 
-                        name="trato" 
-                        required
-                        tabindex="1">
-                            <option value="">Seleccione...</option>
-                            <option value="sr">Sr.</option>
-                            <option value="sra">Sra.</option>
-                            <option value="srta">Srta.</option>
-                            <option value="dr">Dr.</option>
-                            <option value="dra">Dra.</option>
-                    </select>
-                </div>
+                    <!-- ========================================
+                    OPCION GENERO HOMBRE MUJER
+                    ======================================== -->
+                    <div class="form-filas">
+                        <label for="trato">Trato</label>
+                        <select 
+                            id="trato" 
+                            name="trato" 
+                            required
+                            tabindex="1">
+                                <option value="">Seleccione...</option>
+                                <option value="sr">Sr.</option>
+                                <option value="sra">Sra.</option>
+                                <option value="srta">Srta.</option>
+                                <option value="dr">Dr.</option>
+                                <option value="dra">Dra.</option>
+                        </select>
+                    </div>
 
-                <!-- ========================================
-                NOMBRE APELLLIDOS
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="nombre">Nombre</label>
-                    <input 
-                        type="text" 
-                        id="nombre" 
-                        name="nombre" 
-                        size="15" 
-                        minlength="2" 
-                        maxlength="15" 
-                        placeholder="" 
-                        required 
-                        pattern="[A-Za-z]{2,15}" 
-                        title="Posa el teu nom"
-                        tabindex="2">
-                </div>
+                    <!-- ========================================
+                    NOMBRE APELLLIDOS
+                    ======================================== -->
+                    <div class="form-filas">
+                        <label for="nombre">Nombre</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            size="15" 
+                            minlength="2" 
+                            maxlength="15" 
+                            placeholder="" 
+                            required 
+                            pattern="[A-Za-z]{2,15}" 
+                            title="Posa el teu nom"
+                            tabindex="2">
+                    </div>
 
-                <div class="form-filas">
-                    <label for="apellidos">Apellidos</label>
-                    <input 
-                        type="text" 
-                        id="apellidos" 
-                        name="apellidos" 
-                        size="30" 
-                        minlength="2" 
-                        maxlength="30" 
-                        placeholder="" 
-                        pattern="[A-Za-z]{2,30}" 
-                        title="Pon tus apellidos"
-                        required
-                        tabindex="3">
-                </div>
+                    <div class="form-filas">
+                        <label for="apellidos">Apellidos</label>
+                        <input 
+                            type="text" 
+                            id="apellidos" 
+                            name="apellidos" 
+                            size="30" 
+                            minlength="2" 
+                            maxlength="30" 
+                            placeholder="" 
+                            pattern="[A-Za-z]{2,30}" 
+                            title="Pon tus apellidos"
+                            required
+                            tabindex="3">
+                    </div>
 
-                <!-- ========================================
-                DNI / NIF
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="dni">DNI/NIF</label>
-                    <input 
-                        type="text" 
-                        id="dni" 
-                        name="dni" 
-                        required
-                        size="12" 
-                        maxlength="12" 
-                        placeholder="Ej. 00.000.000-A" 
-                        required 
-                        pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[A-Z]{1}" 
-                        title="Pon tu teléfono"
-                        tabindex="4">
-                </div>
+                    <div class="doble-col">
+                        <!-- ========================================
+                        DNI / NIF
+                        ======================================== -->
+                        <div class="form-filas">
+                            <label for="dni">DNI/NIF</label>
+                            <input 
+                                type="text" 
+                                id="dni" 
+                                name="dni" 
+                                required
+                                size="12" 
+                                maxlength="12" 
+                                placeholder="Ej. 00.000.000-A" 
+                                required 
+                                pattern="[0-9]{2}.[0-9]{3}.[0-9]{3}-[A-Z]{1}" 
+                                title="Pon tu teléfono"
+                                tabindex="4">
+                        </div>
 
-                <!-- ========================================
-                FECHA NACIMIENTO
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="fechaNacimiento">Fecha de nacimiento</label>
-                    <input 
-                        type="date" 
-                        id="fechaNacimiento" 
-                        name="fechaNacimiento"
-                        required
-                        tabindex="5">
-                </div>
+                        <!-- ========================================
+                        FECHA NACIMIENTO
+                        ======================================== -->
+                        <div class="form-filas">
+                            <label for="fechaNacimiento">Fecha de nacimiento</label>
+                            <input 
+                                type="date" 
+                                id="fechaNacimiento" 
+                                name="fechaNacimiento"
+                                required
+                                tabindex="5">
+                        </div>
+        
+                        <!-- ========================================
+                        TELEFONO
+                        ======================================== -->
+                        <div class="form-filas">
+                            <label for="telefono">Teléfono</label>
+                            <input 
+                                type="tel" 
+                                id="telefono" 
+                                name="telefono"
+                                size="13" 
+                                minlength="2" 
+                                maxlength="11" 
+                                placeholder="Ej. 666 777 888" 
+                                required 
+                                pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" 
+                                title="Pon tu teléfono"
+                                tabindex="7">
+                        </div>
+                    </div>
 
-                <!-- ========================================
-                EMAIL
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="email">Correo electrónico</label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        size="40"
-                        minlength="10"
-                        maxlength="40"
-                        placeholder="Ej. usuario@gmail.com"
-                        pattern="[0-9A-Za-z]+(\.*[0-9A-Za-z]+)@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}"
-                        title="Pon tu correo electronico"
-                        required
-                        tabindex="6">
-                </div>
 
-                <!-- ========================================
-                TELEFONO
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="telefono">Teléfono</label>
-                    <input 
-                        type="tel" 
-                        id="telefono" 
-                        name="telefono"
-                        size="13" 
-                        minlength="2" 
-                        maxlength="11" 
-                        placeholder="Ej. 666 777 888" 
-                        required 
-                        pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" 
-                        title="Pon tu teléfono"
-                        tabindex="7">
-                </div>
+                    <!-- ========================================
+                    EMAIL
+                    ======================================== -->
+                    <div class="form-filas">
+                        <label for="email">Correo electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            size="40"
+                            minlength="10"
+                            maxlength="40"
+                            placeholder="Ej. usuario@gmail.com"
+                            pattern="[0-9A-Za-z]+(\.*[0-9A-Za-z]+)@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}"
+                            title="Pon tu correo electronico"
+                            required
+                            tabindex="6">
+                    </div>
 
-                <!-- ========================================
-                DIRECCION
-                ======================================== -->
-                <div class="form-filas">
-                    <label for="direccion">Dirección</label>
-                    <input 
-                        type="text" 
-                        id="direccion" 
-                        name="direccion"
-                        size="50" 
-                        minlength="2" 
-                        maxlength="50" 
-                        required
-                        tabindex="8">
-                </div>
+                    <!-- ========================================
+                    DIRECCION
+                    ======================================== -->
+                    <div class="form-filas">
+                        <label for="direccion">Dirección</label>
+                        <input 
+                            type="text" 
+                            id="direccion" 
+                            name="direccion"
+                            size="50" 
+                            minlength="2" 
+                            maxlength="50" 
+                            required
+                            tabindex="8">
+                    </div>
+                    <div class="doble-col">
+                        <div class="form-filas">
+                            <label for="nume">Núm.</label>
+                            <input 
+                                type="text" 
+                                id="nume" 
+                                name="nume"
+                                size="2" 
+                                minlength="1" 
+                                maxlength="3" 
+                                required
+                                tabindex="9">
+                        </div>
+        
+                        <div class="form-filas">
+                            <label for="Esc">Escalera</label>
+                            <input 
+                                type="text" 
+                                id="Esc" 
+                                name="Esc"
+                                size="2" 
+                                maxlength="1"
+                                pattern="[A|B|C|D|E|F]{1}"
+                                required
+                                tabindex="10">
+                        </div>
+        
+                        <div class="form-filas">
+                            <label for="piso">Piso</label>
+                            <input 
+                                type="text" 
+                                id="piso" 
+                                name="piso"
+                                size="2" 
+                                minlength="1" 
+                                maxlength="2" 
+                                required
+                                tabindex="11">
+                        </div>
+        
+                        <div class="form-filas">
+                            <label for="porta">Puerta</label>
+                            <input 
+                                type="text" 
+                                id="Porta" 
+                                name="Porta"
+                                size="2" 
+                                minlength="1" 
+                                maxlength="2" 
+                                required
+                                tabindex="12">
+                        </div>
+                        
+                        <div class="form-filas">
+                            <label for="codigoPostal">Código Postal</label>
+                            <input 
+                                type="text" 
+                                id="codigoPostal" 
+                                name="codigoPostal"
+                                size="5" 
+                                maxlength="5" 
+                                placeholder="00000" 
+                                required 
+                                pattern="[0-9]{4,5}"
+                                title="Codi postal"
+                                tabindex="13">
+                        </div>
+                    </div>
+                        
+                    <div class="doble-col">
+                        <div class="form-filas">
+                            <label for="poblacion">Población</label>
+                            <input 
+                                type="text" 
+                                id="poblacion" 
+                                name="poblacion"
+                                size="25" 
+                                minlength="5" 
+                                maxlength="25" 
+                                required
+                                title="Pon tu población"
+                                tabindex="14">
+                        </div>
+
+                        <div class="form-filas">
+                            <label for="provincia">Provincia</label>
+                            <input 
+                                type="text" 
+                                id="provincia" 
+                                name="provincia"
+                                size="25" 
+                                minlength="5" 
+                                maxlength="25" 
+                                required 
+                                title="Pon tu provincia"
+                                tabindex="15">
+                        </div>
+                        
+                        <div class="form-filas">
+                            <label for="pais">Pais:</label>
+                            <input 
+                                type="text" 
+                                name="pais" 
+                                id="pais" 
+                                size="25" 
+                                minlength="2" 
+                                maxlength="25" 
+                                required 
+                                pattern="[A-Za-Z]{2,20}" 
+                                title="Pon tu pais"
+                                tabindex="16">
+                        </div>
+                    </div>
+
+
                     
-                <div class="form-filas">
-                    <label for="nume">Núm.</label>
-                    <input 
-                        type="text" 
-                        id="nume" 
-                        name="nume"
-                        size="2" 
-                        minlength="1" 
-                        maxlength="3" 
-                        required
-                        tabindex="9">
-                </div>
 
-                <div class="form-filas">
-                    <label for="Esc">Escalera</label>
-                    <input 
-                        type="text" 
-                        id="Esc" 
-                        name="Esc"
-                        size="2" 
-                        maxlength="1"
-                        pattern="[A|B|C|D|E|F]{1}"
-                        required
-                        tabindex="10">
-                </div>
+                    <!-- ========================================
+                    CONTRASEÑA Y CONFIRMACION
+                    ======================================== -->
+                    <div class="form-filas">
+                        <label for="password">Clave de acceso</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            size="20" 
+                            minlength="8" 
+                            maxlength="15" 
+                            placeholder="Clave" 
+                            required 
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
+                            title="Pon una clave que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)"
+                            tabindex="17">
+                    </div>
 
-                <div class="form-filas">
-                    <label for="piso">Piso</label>
-                    <input 
-                        type="text" 
-                        id="piso" 
-                        name="piso"
-                        size="2" 
-                        minlength="1" 
-                        maxlength="2" 
-                        required
-                        tabindex="11">
-                </div>
+                    <div class="form-filas">
+                        <label for="confirmPassword">Repetición de la clave</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            size="20" 
+                            minlength="8" 
+                            maxlength="15" 
+                            placeholder="Repite la clave" 
+                            required 
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
+                            title="Pon una contraseña que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)"
+                            tabindex="18">
+                    </div>
 
-                <div class="form-filas">
-                    <label for="porta">Puerta</label>
-                    <input 
-                        type="text" 
-                        id="Porta" 
-                        name="Porta"
-                        size="2" 
-                        minlength="1" 
-                        maxlength="2" 
-                        required
-                        tabindex="12">
                 </div>
-
-                <div class="form-filas">
-                    <label for="codigoPostal">Código Postal</label>
-                    <input 
-                        type="text" 
-                        id="codigoPostal" 
-                        name="codigoPostal"
-                        size="5" 
-                        maxlength="5" 
-                        placeholder="00000" 
-                        required 
-                        pattern="[0-9]{4,5}"
-                        title="Codi postal"
-                        tabindex="13">
-                </div>
-
-                <div class="form-filas">
-                    <label for="poblacion">Población</label>
-                    <input 
-                        type="text" 
-                        id="poblacion" 
-                        name="poblacion"
-                        size="25" 
-                        minlength="5" 
-                        maxlength="25" 
-                        required
-                        title="Pon tu población"
-                        tabindex="14">
-                </div>
-
-                <div class="form-filas">
-                    <label for="provincia">Provincia</label>
-                    <input 
-                        type="text" 
-                        id="provincia" 
-                        name="provincia"
-                        size="25" 
-                        minlength="5" 
-                        maxlength="25" 
-                        required 
-                        title="Pon tu provincia"
-                        tabindex="15">
-                </div>
-
-                <div class="form-filas">
-                    <label for="pais">Pais:</label>
-                    <input 
-                        type="text" 
-                        name="pais" 
-                        id="pais" 
-                        size="25" 
-                        minlength="2" 
-                        maxlength="25" 
-                        required 
-                        pattern="[A-Za-Z]{2,20}" 
-                        title="Pon tu pais"
-                        tabindex="16">
-                </div>
-                
 
                 <!-- ========================================
-                CONTRASEÑA Y CONFIRMACION
+                BOTON
                 ======================================== -->
-                <div class="form-filas">
-                    <label for="password">Clave de acceso</label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        size="20" 
-                        minlength="8" 
-                        maxlength="15" 
-                        placeholder="Clave" 
-                        required 
-                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
-                        title="Pon una clave que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)"
-                        tabindex="17">
-                </div>
+                <button type="submit" tabindex="19">
+                    Registrarse
+                </button>
 
-                <div class="form-filas">
-                    <label for="confirmPassword">Repetición de la clave</label>
-                    <input
-                        type="password"
-                        id="confirmPassword"
-                        name="confirmPassword"
-                        size="20" 
-                        minlength="8" 
-                        maxlength="15" 
-                        placeholder="Repite la clave" 
-                        required 
-                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&-.]{8,15}"
-                        title="Pon una contraseña que lleve una minuscula, una mayuscula, un número y un caracter especial (@$!%*?&-.)"
-                        tabindex="18">
-                </div>
-
-            </div>
-
-            <!-- ========================================
-            BOTON
-            ======================================== -->
-            <button type="submit" tabindex="19">
-                Registrarse
-            </button>
-
-        </form>
+            </form>
+        </div>
 
     </main>
         

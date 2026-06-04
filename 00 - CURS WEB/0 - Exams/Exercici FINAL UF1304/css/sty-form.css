@@ -1,14 +1,6 @@
 /* <!--  ==================================================
 COMUN
 ==================================================== --> */
-.contenedor{
-    max-width:1200px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
-
 .form-filas{
     display:flex;
     flex-direction:column;
@@ -20,6 +12,12 @@ h1{
     margin-bottom:30px;
     color:#333;
 }
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -29,20 +27,70 @@ PAGINA DE LISTADOS
 
 .franjita-comunidad h2{
     margin:8px 0;
-    color:#222;
+    color:#222222;
 }
 .franja-hotel{
     background:#fff;
     padding:20px;
+    border: 1px solid #999999;
     border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
     display:flex;
     justify-content:space-between;
     align-items:center;
-    transition:transform 0.3s;
 }
 .lista-hoteles{
     display:flex;
     flex-direction:column;
-    gap:20px;
+    gap:10px;
+}
+
+/* <!--  ==================================================
+TABLAS
+==================================================== --> */
+table{
+    margin: 10px 0px;
+}
+th, td{
+    border: 1px solid #555555;
+    padding: 5px 6px;
+    text-align: center;
+    background-color: #f8fcff;
+}
+th{
+    background-color: #dce9d5;
+}
+
+/* <!--  ==================================================
+FILAS CON DOBLE COLUMNA
+==================================================== --> */
+.doble-col{
+    display:flex;
+    gap: 20px;
+}
+
+button[type="submit"]{
+    background-color: #013801;
+    color: #fefff0;
+    margin: 5px 0px;
+    padding: 3px 9px;
+    border-radius: 5px;
+}
+
+/* <!--  ==================================================
+CAJAS EXTERIORES DE FORMULARIOS
+==================================================== --> */
+.caixa-form-gr, .caixa-form-pet{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffffb0;
+    box-shadow: #a0b8a0 0px 0px 10px;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 25px;
+}
+.caixa-form-gr{
+    width: 600px;
+}
+.caixa-form-pet{
+    width: 440px;
 }
