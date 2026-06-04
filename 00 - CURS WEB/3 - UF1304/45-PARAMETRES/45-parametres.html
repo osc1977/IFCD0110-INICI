@@ -1,0 +1,75 @@
+<!-- ==================================================
+    nombre del proyecto:	45-parametres.html
+    versión:				1.0
+    descripción:			parametres de formulari
+    fecha:					4-6-2026
+    autor:					Oscar
+================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametres</title>
+
+    <!--  ==================================================
+    LIBRERIAS
+    ==================================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  ==================================================
+    HOJAS DE ESTILO
+    ==================================================== -->
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    <link rel="stylesheet" href="./css/Template-GRID.css">
+    
+    <!--  ==================================================
+    TIPOGRAFIA
+    ==================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon" />
+</head>
+    
+<body>
+    
+    <header>
+        Recepció de valors entre arxius html
+    </header>
+    
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i>&nbsp; Home</li>
+            <li><i class="fa-solid fa-people-group"></i>&nbsp; Qui som</li>
+            <li><i class="fa-solid fa-landmark-dome"></i>&nbsp; Historia</li>
+            <li><i class="fa-solid fa-address-book"></i>&nbsp; Contacte</li>
+        </ul>
+    </nav>
+    
+    <main>
+        Contingut Principal
+        <div>Nom:&nbsp;<span id="nomrebut"></span></div>
+        <!-- <div id="nomrebut"></div> -->
+    </main>
+    
+    <aside>
+        Banners
+    </aside>
+    
+    <footer>
+        · ©(2026) · Desenvolupat per Oscar · Todos los derechos reservados ·
+    </footer>
+    
+</body>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("nomrebut").textContent = params.get("fnom");
+    
+</script>
+    
+</html>

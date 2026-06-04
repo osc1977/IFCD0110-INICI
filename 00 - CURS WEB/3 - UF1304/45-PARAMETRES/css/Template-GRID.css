@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* agafa els marges de la seva caixa */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+html{
+    font-size: 62.5%; /* equival a 10px */
+    scroll-behavior: smooth;
+}
+
+:root{
+    --fons-principal: #e8ffc4;
+    --fons-cap-peu: #283583;
+    --fons-nav: #f1a5a5;
+    --fons-anuncis: #ffff4d;
+    --col-lletras-cap-peu: #fceedc;
+}
+
+header, footer{
+    width: 100%;
+    background-color: var(--fons-cap-peu);
+    color: var(--col-lletras-cap-peu);
+    text-align: center;
+    align-content: center;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "cap    cap         cap"
+        "llista contingut   banner"
+        "peu    peu         peu";
+    grid-template-columns: 12% auto 12%;
+    grid-template-rows: 3rem auto 2rem;
+}
+body{
+    font-size: 1.4rem;
+}
+header{
+    grid-area: cap;
+    font-size: 2rem;
+}
+nav{
+    grid-area: llista;
+    background-color: #ede3f8;
+}
+main{
+    grid-area: contingut;
+    background-color:  #fdf9d3;
+}
+aside{
+    grid-area: banner;
+    background-color:  #d0e4fa;
+    text-align: center;
+
+}
+nav, main, aside{
+    padding: 0.5rem;
+}
+
+footer{
+    grid-area: peu;
+    height: 2rem;
+}
+/* ul::before{
+    content: "MENÚ";
+} */
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+li{
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+li:hover{
+    cursor: pointer;
+    background-color: #c77575;
+    transform: scale(1.25);
+    transition: all 0.3s ease;
+    border-radius: 3rem;
+    color: #ffff4d;
+}
+li:hover > i{
+    transition: all 0.3s ease;
+}
+li:hover > i{
+    transform: rotate(360deg);
+    color: #ffff4d;
+    transition: all 0.3s ease;
+}
+
+@media(max-width:400px){
+    body{
+        display: block;
+    }
+}

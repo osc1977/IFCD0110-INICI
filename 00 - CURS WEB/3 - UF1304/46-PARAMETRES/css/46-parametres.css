@@ -1,0 +1,18 @@
+/* <!--  ==================================================
+TIPOGRAFIA
+==================================================== --> */
+.oleo-REG {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-BD {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1{
+  text-align: center;
+}
